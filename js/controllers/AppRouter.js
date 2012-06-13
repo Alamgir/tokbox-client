@@ -15,7 +15,7 @@ var AppRouter = Backbone.Router.extend({
     views: {},
 
     initialize: function() {
-        _.bindAll(this, "index", "display_graph", "setBody");
+        _.bindAll(this, "index", "auth", "account", "setBody");
 
         this.views.app = new AppView({ el : $('body') });
         this.views.pub = new PublicView();
@@ -29,7 +29,7 @@ var AppRouter = Backbone.Router.extend({
         var access_token = $.jStorage.get("access_token");
         if (!access_token) {
             this.setBody(this.views.pub);
-            this.view.render();
+            this.view.body.render();
         }
         else {
             this.navigate("account", true);

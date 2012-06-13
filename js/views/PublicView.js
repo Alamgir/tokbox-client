@@ -12,7 +12,7 @@ var PublicView = Backbone.View.extend({
     },
 
     initialize: function() {
-        _.bindAll(this, 'render');
+        _.bindAll(this, 'render', "start_auth", "resume_auth");
 
     },
 
@@ -37,7 +37,7 @@ var PublicView = Backbone.View.extend({
                     //redirect to dropbox with request_token in URL
                 }
             }
-        });
+        })
     },
 
     resume_auth: function() {
@@ -60,7 +60,7 @@ var PublicView = Backbone.View.extend({
                     //redirect to account view with the data
                 }
             }
-        });
+        })
     }
 
 });

@@ -9,8 +9,7 @@ var AppView = Backbone.View.extend({
 
     events : {
         "click #how_link":    "footer_link",
-        "click #about_link":  "footer_link",
-        "click #start":       "start_auth"
+        "click #about_link":  "footer_link"
     },
 
     initialize: function() {
