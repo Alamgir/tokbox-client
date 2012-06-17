@@ -21,8 +21,8 @@
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
 
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet/less" type="text/css" href="css/web_portal.less">
-  <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet/less" type="text/css" href="/css/web_portal.less">
+  <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.css">
   <link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700' rel='stylesheet' type='text/css'>
 
 
@@ -31,90 +31,37 @@
   <!-- All JavaScript at the bottom, except this Modernizr build.
        Modernizr enables HTML5 elements & feature detects for optimal performance.
        Create your own custom Modernizr build: www.modernizr.com/download/ -->
-  <script src="js/libs/modernizr-2.5.3.min.js"></script>
+  <script src="/js/libs/modernizr-2.5.3.min.js"></script>
 
     <!--START HANDLEBARS TEMPLATES RIGHT HERE-->
-    <!--<script id="main-template" type="text/x-handlebars-template">-->
-        <!--<div id="main">-->
-            <!--<div id="header"><img id="logo_img" src="img/grafly_logo.png" /><br/>Embed your data <b>anywhere.</b></div>-->
-            <!--<div id="drop_zone"></div>-->
-            <!--<div class="push"></div>-->
-        <!--</div>-->
-        <!--<div id="footer">-->
-            <!--<div id="footer_links">-->
-                <!--<ul id="links_ul">-->
-                    <!--<li class="link" id="how_link">How does it work?</li>-->
-                    <!--<li class="link" id="about_link">About</li>-->
-                <!--</ul>-->
-            <!--</div>-->
-            <!--<div id="how_work" class="footer_section">-->
-                <!--<div class="row">-->
-                    <!--<div class="span4 offset4">-->
-                        <!--<div id="tile1" class="how_tile"></div>-->
-                        <!--<div class="how_title">-->
-                            <!--<h1 class="how_number">1</h1>Upload your data<br/>-->
-                        <!--</div>-->
-                        <!--<div class="how_desc">-->
-                            <!--Drag-n-Drop or upload your data in an Excel or CSV file.-->
-                            <!--Grafly takes care of the rest!-->
-                        <!--</div>-->
-                    <!--</div>-->
-                    <!--<div class="span4 offset2">-->
-                        <!--<div id="tile2" class="how_tile"></div>-->
-                        <!--<div class="how_title">-->
-                            <!--<h1 class="how_number">2</h1>Get your graph<br/>-->
-                        <!--</div>-->
-                        <!--<div class="how_desc">-->
-                            <!--Use the private link to update your data anytime and use the public one to share your graph.-->
-                            <!--It’s that simple.-->
-                        <!--</div>-->
-                    <!--</div>-->
-                    <!--<div class="span4 offset2">-->
-                        <!--<div id="tile3" class="how_tile"></div>-->
-                        <!--<div class="how_title">-->
-                            <!--<h1 class="how_number">2</h1>Embed it anywhere<br/>-->
-                        <!--</div>-->
-                        <!--<div class="how_desc">-->
-                            <!--Use the embed code to place your graph in blog posts and websites all over the web.-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
-                <!--<div class="row how_final">-->
-                    <!--Upload new data anytime and your graph will update anywhere it’s embedded. Instantly.-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div id="about" class="footer_section">-->
-                <!--<div class="row how_final">-->
-                    <!--Built with love by:-->
-                <!--</div>-->
-                <!--<div class="row">-->
-                    <!--<div class="span6 offset6 about_tile">-->
-                        <!--<h1 class="how_number">Alamgir Mand</h1><br/>-->
-                        <!--Github: www.github.com/alamgir<br/>-->
-                        <!--E-mail: mand.alamgir@gmail.com-->
-                    <!--</div>-->
-                    <!--<div class="span6 offset4 about_tile">-->
-                        <!--<h1 class="how_number">Irwin Billing</h1><br/>-->
-                        <!--Github: www.github.com/irwinb<br/>-->
-                        <!--E-mail: irwin.billing@gmail.com-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--</script>-->
+    <script id="appView-template" type="text/x-handlebars-template">
+        <img id="logo_img" src="/img/grafly_logo.png" /><br/>Embed your data <b>anywhere.</b>
+    </script>
 
-    <script id="main-template" type="text/x-handlebars-template">
-        <div id="main">
-            <form id="start_form">
-                <input type="button" id="start" value="Log into dropbox" />
-            </form> 
+    <script id="publicView-template" type="text/x-handlebars-template">
+        <div id="auth_button">
+            <input type="button" id="start" value="Log into dropbox" />
         </div>
     </script>
 
+    <script id="accountView-template" type="text/x-handlebars-template">
+        <div id="account">
+            You are now logged in and inside the accountView
+        </div>
+    </script>
+
+    <!--<script data-main="/js/main.js" src="/js/require.js"></script>-->
+
 </head>
 <body>
-  <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
-       chromium.org/developers/how-tos/chrome-frame-getting-started -->
+
+    <div id="header"></div>
+    <div id="app"></div>
+    <div id="footer"></div>
+
+
+<!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
+chromium.org/developers/how-tos/chrome-frame-getting-started -->
   <!--[if lt IE 7]>
   <!--<p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p>-->
   <!--<![endif]&ndash;&gt;-->
@@ -124,29 +71,23 @@
   <!-- JavaScript at the bottom for fast page loading -->
 
   <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>-->
+  <script>window.jQuery || document.write('<script src="/js/libs/jquery-1.7.1.min.js"><\/script>')</script>
 
   <!-- scripts concatenated and minified via build script -->
-  <script src="js/plugins.js"></script>
-  <script src="js/libs/less-1.3.0.min.js"></script>
-  <script src="js/libs/jquery.scrollTo-1.4.2.js"></script>
-  <script src="js/libs/underscore.js"></script>
-  <script src="js/libs/backbone.js"></script>
-  <script src="js/libs/handlebars-1.0.0.beta.6.js"></script>
-  <script src="js/libs/jquery.ui.widget.js"></script>
-  <script src="js/libs/jquery.iframe-transport.js"></script>
-  <script src="js/libs/jquery.fileupload.js"></script>
-  <script src="js/libs/jquery.fileupload-ui.js"></script>
-  <script src="js/libs/jstorage.min.js"></script>
+  <script src="/js/libs/less-1.3.0.min.js"></script>
+  <script src="/js/libs/underscore-min.js"></script>
+  <script src="/js/libs/backbone-min.js"></script>
+  <script src="/js/libs/handlebars-1.0.0.beta.6.js"></script>
+  <script src="/js/libs/jstorage.min.js"></script>
   <!-- end scripts -->
 
   <!--backbone scripts-->
-  <script src="js/main.js"></script>
-  <script src="js/controllers/AppRouter.js"></script>
-  <script src="js/views/AppView.js"></script>
-  <script src="js/views/AccountView.js"></script>
-  <script src="js/views/PublicView.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/controllers/AppRouter.js"></script>
+    <script src="/js/views/AppView.js"></script>
+    <script src="/js/views/AccountView.js"></script>
+    <script src="/js/views/PublicView.js"></script>
 
 
   <script type="text/javascript">

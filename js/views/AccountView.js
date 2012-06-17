@@ -15,39 +15,15 @@ var AccountView = Backbone.View.extend({
     initialize: function() {
         _.bindAll(this, 'render');
 
-        var access_token = $.jStorage.get("access_token");
-        if (typeof App.user == 'undefined' && access_token) {
-            $.ajax({
-                type: 'POST',
-                url: 'http://localhost:8080/users/sign_in',
-                data: access_token,
-                dataType: 'json',
-                statusCode: {
-                    400 : function(jqXHR, textStatus, errorThrown) {
-                        $.jStorage.deleteKey("access_token");
-                        App.router.navigate("");
-                    },
-                    200 : function(data) {
-                        App.user = data.user;
-                        App.file_data = data.entity;
-                        this.view.render();
-                    }
-                }
-            });
-        }
-
-
     },
 
     render: function() {
         //Pass in the user to the account info template
         //Pass in the file info to the file_view template
-        var source   = $("#main-template").html();
+        var source   = $("#accountView-template").html();
         var template = Handlebars.compile(source);
-        $('body').html(template);
-
-        $('#about').hide();
-
+        $(this.el).html(template);
+        $('#app').append(this.el);
     },
 
     footer_link: function() {

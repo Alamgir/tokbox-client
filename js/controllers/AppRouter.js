@@ -8,13 +8,14 @@
 var AppRouter = Backbone.Router.extend({
     routes: {
         "":                     "index",
-        "/auth":                "auth",
-        "/account":             "account"
+        "auth":                 "auth",
+        "account":              "account",
+        "login":                "login"
     },
 
     views: {},
 
-    initialize: function() {
+    initialize: function(options) {
         _.bindAll(this, "index", "auth", "account", "setBody");
 
         this.views.app = new AppView({ el : $('body') });
@@ -23,6 +24,9 @@ var AppRouter = Backbone.Router.extend({
 
         this.view = this.views.app;
         this.view.render();
+
+        this.route(/^auth?(.*)$/, "auth");
+
     },
 
     index: function() {
@@ -44,22 +48,30 @@ var AppRouter = Backbone.Router.extend({
 //            this.view.body.render();
 //        }
     },
-    auth: function() {
+
+    auth: function(params) {
         this.setBody(this.views.pub, false);
         this.view.body.render();
         this.view.body.resume_auth();
     },
+
     account: function() {
         this.setBody(this.views.account, true);
         this.view.body.render();
     },
 
+    login: function() {
+        this.setBody(this.views.pub);
+        this.view.body.render();
+        this.view.body.login();
+    },
+
     setBody: function(view, auth) {
         if (auth == true && typeof App.user == 'undefined') {
-            this.navigate("", true);
+            //login
+            this.navigate("login", true);
             return;
         }
-
 
         this.view.body = view;
     }

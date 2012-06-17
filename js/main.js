@@ -5,6 +5,7 @@
  * Time: 11:22 PM
  * To change this template use File | Settings | File Templates.
  */
+
 var App = {
     initialize: function() {
         var sync = Backbone.sync;

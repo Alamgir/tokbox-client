@@ -8,8 +8,7 @@
 var AppView = Backbone.View.extend({
 
     events : {
-        "click #how_link":    "footer_link",
-        "click #about_link":  "footer_link"
+        //Navigation/header events go up here
     },
 
     initialize: function() {
@@ -17,17 +16,9 @@ var AppView = Backbone.View.extend({
     },
 
     render: function() {
-        var source   = $("#main-template").html();
+        var source   = $("#appView-template").html();
         var template = Handlebars.compile(source);
-        $('body').html(template);
-
-        $('#about').hide();
-
-    },
-
-    footer_link: function() {
-        $(window).scrollTo('100%', 500);
-        
+        $('#header').html(template);
     }
 
 });
