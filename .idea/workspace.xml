@@ -2,29 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b0a706f5-97de-4f10-b2a5-536267d86ab3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/libs/backbone-min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/libs/underscore-min.js" />
-      <change type="DELETED" beforePath="E:\Alamgir\tokbox-client\js\TokBox.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Alamgir\tokbox-client\js\dragndrop.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Alamgir\tokbox-client\js\libs\backbone.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Alamgir\tokbox-client\js\libs\jquery-1.7.1.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Alamgir\tokbox-client\js\libs\jquery.fileupload-fp.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Alamgir\tokbox-client\js\libs\jquery.fileupload-ui.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Alamgir\tokbox-client\js\libs\jquery.fileupload.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Alamgir\tokbox-client\js\libs\jquery.iframe-transport.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Alamgir\tokbox-client\js\libs\jquery.scrollTo-1.4.2.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Alamgir\tokbox-client\js\libs\jquery.ui.widget.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Alamgir\tokbox-client\js\libs\underscore.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\Alamgir\tokbox-client\js\plugins.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.htaccess" afterPath="$PROJECT_DIR$/.htaccess" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/img/absurdidad.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/accountView.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/comment_gutter.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/main_view.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/sidebar.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/header.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/views/HomeView.js" />
+      <change type="DELETED" beforePath="E:\Alamgir\tokbox-client\js\views\AccountView.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/web_portal.less" afterPath="$PROJECT_DIR$/css/web_portal.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controllers/AppRouter.js" afterPath="$PROJECT_DIR$/js/controllers/AppRouter.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/libs/jstorage.min.js" afterPath="$PROJECT_DIR$/js/libs/jstorage.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/views/AccountView.js" afterPath="$PROJECT_DIR$/js/views/AccountView.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/views/AppView.js" afterPath="$PROJECT_DIR$/js/views/AppView.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/views/PublicView.js" afterPath="$PROJECT_DIR$/js/views/PublicView.js" />
+      <change type="MOVED" beforePath="E:\Alamgir\tokbox-client\lib\bootstrap\css\bootstrap-responsive.css" afterPath="$PROJECT_DIR$/css/bootstrap/css/bootstrap-responsive.css" />
+      <change type="MOVED" beforePath="E:\Alamgir\tokbox-client\lib\bootstrap\css\bootstrap-responsive.min.css" afterPath="$PROJECT_DIR$/css/bootstrap/css/bootstrap-responsive.min.css" />
+      <change type="MOVED" beforePath="E:\Alamgir\tokbox-client\lib\bootstrap\css\bootstrap.css" afterPath="$PROJECT_DIR$/css/bootstrap/css/bootstrap.css" />
+      <change type="MOVED" beforePath="E:\Alamgir\tokbox-client\lib\bootstrap\css\bootstrap.min.css" afterPath="$PROJECT_DIR$/css/bootstrap/css/bootstrap.min.css" />
+      <change type="MOVED" beforePath="E:\Alamgir\tokbox-client\lib\bootstrap\img\glyphicons-halflings-white.png" afterPath="$PROJECT_DIR$/css/bootstrap/img/glyphicons-halflings-white.png" />
+      <change type="MOVED" beforePath="E:\Alamgir\tokbox-client\lib\bootstrap\img\glyphicons-halflings.png" afterPath="$PROJECT_DIR$/css/bootstrap/img/glyphicons-halflings.png" />
+      <change type="MOVED" beforePath="E:\Alamgir\tokbox-client\lib\bootstrap\js\bootstrap.js" afterPath="$PROJECT_DIR$/css/bootstrap/js/bootstrap.js" />
+      <change type="MOVED" beforePath="E:\Alamgir\tokbox-client\lib\bootstrap\js\bootstrap.min.js" afterPath="$PROJECT_DIR$/css/bootstrap/js/bootstrap.min.js" />
     </list>
     <ignored path="tokbox.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -51,7 +51,34 @@
           <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="89" column="51" selection-start="3868" selection-end="3868" vertical-scroll-proportion="0.7156398">
+                <state line="124" column="25" selection-start="5244" selection-end="5244" vertical-scroll-proportion="0.7843602">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="header.html" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/header.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="24" column="15" selection-start="806" selection-end="806" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="accountView.html" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/accountView.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="17" column="6" selection-start="0" selection-end="575" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="testView.html" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/testView.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="8" column="54" selection-start="460" selection-end="460" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -60,7 +87,16 @@
           <file leaf-file-name="AppRouter.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/js/controllers/AppRouter.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="14" column="0" selection-start="385" selection-end="385" vertical-scroll-proportion="0.0">
+                <state line="79" column="19" selection-start="2030" selection-end="2030" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/../Backbone-Practice/index.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="89" column="22" selection-start="3618" selection-end="3618" vertical-scroll-proportion="-35.25">
                   <folding />
                 </state>
               </provider>
@@ -73,7 +109,7 @@
           <file leaf-file-name="AppView.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/js/views/AppView.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="20" column="36" selection-start="504" selection-end="504" vertical-scroll-proportion="0.0">
+                <state line="21" column="31" selection-start="533" selection-end="533" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -82,25 +118,52 @@
           <file leaf-file-name="PublicView.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/js/views/PublicView.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="29" column="29" selection-start="734" selection-end="734" vertical-scroll-proportion="0.0">
+                <state line="23" column="0" selection-start="569" selection-end="569" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="AccountView.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js/views/AccountView.js">
+          <file leaf-file-name="HomeView.js" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/js/views/HomeView.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="32" column="0" selection-start="792" selection-end="792" vertical-scroll-proportion="0.0">
+                <state line="20" column="0" selection-start="480" selection-end="480" vertical-scroll-proportion="0.4245283">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/js/main.js">
+          <file leaf-file-name="web_portal.less" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/css/web_portal.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="7" column="0" selection-start="160" selection-end="160" vertical-scroll-proportion="0.1430193">
+                <state line="37" column="23" selection-start="1465" selection-end="1465" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="sidebar.less" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/css/sidebar.less">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="31" column="50" selection-start="706" selection-end="706" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="main_view.less" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/css/main_view.less">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="77" column="20" selection-start="1635" selection-end="1635" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="comment_gutter.less" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/css/comment_gutter.less">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="77" column="19" selection-start="1761" selection-end="1761" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -125,18 +188,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/js/TokBox.js" />
-        <option value="$PROJECT_DIR$/js/views/PublicView.js" />
-        <option value="$PROJECT_DIR$/js/views/AccountView.js" />
-        <option value="$PROJECT_DIR$/js/libs/backbone/backbone.js" />
-        <option value="$PROJECT_DIR$/js/libs/jquery/jquery.js" />
-        <option value="$PROJECT_DIR$/js/libs/underscore/underscore.js" />
-        <option value="$PROJECT_DIR$/js/app.js" />
-        <option value="$PROJECT_DIR$/js/app/app.js" />
-        <option value="$PROJECT_DIR$/js/main.js" />
+        <option value="$PROJECT_DIR$/../Backbone-Practice/index.html" />
+        <option value="$PROJECT_DIR$/header.html" />
+        <option value="$PROJECT_DIR$/accountView.html" />
+        <option value="$PROJECT_DIR$/css/account_view.less" />
+        <option value="$PROJECT_DIR$/css/sidebar.less" />
+        <option value="$PROJECT_DIR$/css/comment_gutter.less" />
         <option value="$PROJECT_DIR$/js/views/AppView.js" />
+        <option value="$PROJECT_DIR$/testView.html" />
+        <option value="$PROJECT_DIR$/css/web_portal.less" />
+        <option value="$PROJECT_DIR$/js/views/AccountView.js" />
         <option value="$PROJECT_DIR$/js/controllers/AppRouter.js" />
+        <option value="$PROJECT_DIR$/js/main.js" />
+        <option value="$PROJECT_DIR$/js/views/PublicView.js" />
+        <option value="$PROJECT_DIR$/css/main_view.less" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/js/views/HomeView.js" />
       </list>
     </option>
   </component>
@@ -172,6 +239,16 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -250,18 +327,26 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
           <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tokbox" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tokbox-client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -271,10 +356,12 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="recentsLimit" value="5" />
-    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../graphly/web_portal" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="PublishConfig" serverName="Tokbox-Client" serverId="35d1437c-11a1-4f8c-86ab-ee6de9a43236">
     <servers>
@@ -296,25 +383,26 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Alamgir\tokbox-client\css\img" />
       <recent name="E:\Alamgir\tokbox-client\js\libs" />
       <recent name="E:\Alamgir\tokbox-client\js" />
       <recent name="$PROJECT_DIR$/js/libs" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Alamgir\tokbox-client\css" />
       <recent name="E:\Alamgir\tokbox-client\js\libs" />
       <recent name="E:\Alamgir\tokbox-client\js\app" />
       <recent name="E:\Alamgir\tokbox-client\js" />
       <recent name="E:\Alamgir\tokbox-client\js\libs\underscore" />
-      <recent name="E:\Alamgir\tokbox-client\js\libs\less" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node JS" working-dir="$PROJECT_DIR$">
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node JS" working-dir="$PROJECT_DIR$" coffeescript-run="false">
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugSession" factoryName="Remote">
       <JSRemoteDebuggerConfigurationSettings>
-        <option name="engineId" />
+        <option name="engineId" value="embedded" />
         <option name="fileUrl" />
       </JSRemoteDebuggerConfigurationSettings>
       <method />
@@ -357,22 +445,22 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32886723" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16447021" sideWeight="0.67094016" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16447021" sideWeight="0.6721854" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="JsTestDriver Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32886723" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="JsTestDriver Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32781458" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32886723" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -433,84 +521,100 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/img/grafly_logo.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
+    <entry file="file://$PROJECT_DIR$/../graphly/web_portal/css/web_portal.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="97" column="1" selection-start="2337" selection-end="2337" vertical-scroll-proportion="0.615566" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/img/.gitignore">
+    <entry file="file://$PROJECT_DIR$/../graphly/web_portal/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+        <state line="59" column="26" selection-start="2829" selection-end="2829" vertical-scroll-proportion="0.41504854" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/libs/backbone-min.js">
+    <entry file="file://$PROJECT_DIR$/header.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="37" selection-start="429" selection-end="429" vertical-scroll-proportion="0.3207127">
+        <state line="24" column="15" selection-start="806" selection-end="806" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accountView.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="6" selection-start="0" selection-end="575" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testView.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="54" selection-start="460" selection-end="460" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/libs/jstorage.min.js">
+    <entry file="file://$PROJECT_DIR$/css/web_portal.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="26" selection-start="3591" selection-end="3591" vertical-scroll-proportion="0.1403118">
-          <folding />
-        </state>
+        <state line="37" column="23" selection-start="1465" selection-end="1465" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/sidebar.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="50" selection-start="706" selection-end="706" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/comment_gutter.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="77" column="19" selection-start="1761" selection-end="1761" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/controllers/AppRouter.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="385" selection-end="385" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/libs/handlebars-1.0.0.beta.6.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/libs/underscore-min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/views/PublicView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="29" selection-start="734" selection-end="734" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/views/AccountView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="0" selection-start="792" selection-end="792" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/views/AppView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="36" selection-start="504" selection-end="504" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="51" selection-start="3868" selection-end="3868" vertical-scroll-proportion="0.7156398">
+        <state line="79" column="19" selection-start="2030" selection-end="2030" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="160" selection-end="160" vertical-scroll-proportion="0.1430193">
+        <state line="37" column="0" selection-start="1100" selection-end="1100" vertical-scroll-proportion="0.77351916">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/views/PublicView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="0" selection-start="569" selection-end="569" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/views/AppView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="31" selection-start="533" selection-end="533" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Backbone-Practice/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="89" column="22" selection-start="3618" selection-end="3618" vertical-scroll-proportion="-35.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/main_view.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="77" column="20" selection-start="1635" selection-end="1635" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="124" column="25" selection-start="5244" selection-end="5244" vertical-scroll-proportion="0.7843602">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/views/HomeView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="480" selection-end="480" vertical-scroll-proportion="0.4245283">
           <folding />
         </state>
       </provider>

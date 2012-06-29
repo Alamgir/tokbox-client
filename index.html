@@ -22,7 +22,10 @@
 
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet/less" type="text/css" href="/css/web_portal.less">
-  <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet/less" type="text/css" href="/css/sidebar.less">
+    <link rel="stylesheet/less" type="text/css" href="/css/main_view.less">
+    <link rel="stylesheet/less" type="text/css" href="/css/comment_gutter.less">
+  <link rel="stylesheet" href="/css/bootstrap/css/bootstrap.css">
   <link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700' rel='stylesheet' type='text/css'>
 
 
@@ -35,7 +38,37 @@
 
     <!--START HANDLEBARS TEMPLATES RIGHT HERE-->
     <script id="appView-template" type="text/x-handlebars-template">
-        <img id="logo_img" src="/img/grafly_logo.png" /><br/>Embed your data <b>anywhere.</b>
+        <div id="header_base">
+            <img id="logo_img" src="/img/tokbox_logo.png" />
+            <div id="logged_in" class="header_right">
+                <span id="header_profile">{{this.display_name}}</span>
+            </div>
+        </div>
+
+    </script>
+
+    <script id="alertView-template" type="text/x-handlebars-template">
+        {{#if this.error}}
+        <div class="alert alert-error">
+            <button class="close" data-dismiss="alert">x</button>
+            <h4 class="alert-heading">{{this.title}}</h4>
+            {{this.message}}
+        </div>
+        {{/if}}
+        {{#if this.success}}
+        <div class="alert alert-success">
+            <button class="close" data-dismiss="alert">x</button>
+            <h4 class="alert-heading">{{this.title}}</h4>
+            {{this.message}}
+        </div>
+        {{/if}}
+        {{#if this.info}}
+        <div class="alert alert-info">
+            <button class="close" data-dismiss="alert">x</button>
+            <h4 class="alert-heading">{{this.title}}</h4>
+            {{this.message}}
+        </div>
+        {{/if}}
     </script>
 
     <script id="publicView-template" type="text/x-handlebars-template">
@@ -44,9 +77,60 @@
         </div>
     </script>
 
-    <script id="accountView-template" type="text/x-handlebars-template">
-        <div id="account">
-            You are now logged in and inside the accountView
+    <script id="mainView-template" type="text/x-handlebars-template">
+        <div id="sidebar" class="span6">
+            <div id="search_box">
+                <input id="search_text" type="text" name="query" placeholder="Search" value class="placeholder">
+            </div>
+            <div id="favorites_bar">
+                <div id="favorites_header">Favorites</div>
+                <div class="favorite_entity"></div>
+            </div>
+        </div>
+        <div id="main_view" class="span11">
+            <div id="breadcrumbs" class="row">
+                <ul class="filecrumb_list">
+                </ul>
+            </div>
+            <div id="file_header" class="row">
+                <div class="span4">Name</div>
+                <div class="span2">Type</div>
+                <div class="span3">Last Modified</div>
+            </div>
+            <div id="file_container">
+
+            </div>
+        </div>
+        <div class="span6 gutter_container">
+            <div id="comment_arrow"></div>
+            <div id="comment_gutter">
+                <div class="file_comment">
+                    <div class="message">This is a message. It can be as long as it wants, it'll just wrap</div>
+                    <div class="message_footer">
+                        <div class="message_author">Alamgir</div>
+                        <div class="message_time">30 Minutes Ago</div>
+                    </div>
+                    <div class="color_tag"></div>
+                </div>
+                <div class="file_event modified">
+                    <strong>Alamgir</strong> modified this file.
+                    <div class="event_time">20 Minutes Ago</div>
+                </div>
+            </div>
+            <input id="comment_box" type="text" name="comment" placeholder="Enter a comment..." value class="placeholder">
+        </div>
+    </script>
+
+    <script id="entityView-template" type="text/x-handlebars-template">
+        <div class="row">
+            <div id="{{this.rev}}" class="file_entity span9 {{this.icon}}" path="{{this.root}}{{this.path}}" type="{{this.icon}}">
+                <div class="span4 file_title">{{this.path}}</div>
+                <div class="span2 file_info">{{this.icon}}</div>
+                <div class="span3 file_info" >{{this.modified}}</div>
+            </div>
+            <div class="action_comment span1"></div>
+            <div class="action_favorite span1"></div>
+            <div class="action_delete span1"></div>
         </div>
     </script>
 
@@ -86,7 +170,7 @@ chromium.org/developers/how-tos/chrome-frame-getting-started -->
     <script src="/js/main.js"></script>
     <script src="/js/controllers/AppRouter.js"></script>
     <script src="/js/views/AppView.js"></script>
-    <script src="/js/views/AccountView.js"></script>
+    <script src="/js/views/HomeView.js"></script>
     <script src="/js/views/PublicView.js"></script>
 
 

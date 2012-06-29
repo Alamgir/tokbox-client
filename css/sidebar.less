@@ -1,0 +1,128 @@
+body {
+    height: 100%;
+    background-image: url('img/absurdidad.png');
+    background-repeat: repeat;
+}
+
+// LESS CSS CLASSES
+
+.rounded_corners {
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+.rounded_corners_top {
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.circle_corners {
+    border-radius: 16px;
+    -moz-border-radius: 16px;
+    -webkit-border-radius: 16px;
+}
+
+.box_shadow {
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+
+.text_shadow_grey {
+    text-shadow: 0px 1px 1px rgba(161,161,161,0.75);
+    -moz-text-shadow: 0px 1px 1px rgba(161,161,161,0.75);
+}
+
+.align_middle {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cell_gradient {
+    background: #fafafa; /* Old browsers */
+    background: -moz-linear-gradient(top, #fafafa 0%, #f1efef 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fafafa), color-stop(100%,#f1efef)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #fafafa 0%,#f1efef 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #fafafa 0%,#f1efef 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #fafafa 0%,#f1efef 100%); /* IE10+ */
+    background: linear-gradient(top, #fafafa 0%,#f1efef 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fafafa', endColorstr='#f1efef',GradientType=0 ); /* IE6-9 */
+}
+
+
+.text_input {
+    vertical-align: middle;
+
+    padding: 5px 8px 5px 30px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    text-decoration: italic;
+    color:gray;
+    border: 1px solid #dbdbdb;
+    .circle_corners;
+}
+
+//
+
+#sidebar {
+    width: 400px;
+}
+
+#search_box {
+    margin-bottom: 30px;
+    width: 230px;
+    .align_middle;
+}
+
+#search_text {
+    .text_input;
+    width: 190px;
+    background:#ffffff url(img/icon-search.png) no-repeat 7px 50%;
+}
+
+#search_text::-webkit-input-placeholder {
+    color: #dbdbdb;
+    font-weight: bold;
+    font-style: italic;
+}
+
+#search_text:focus {
+    color: black;
+}
+
+#favorites_bar {
+    width: 230px;
+
+    .rounded_corners;
+    .box_shadow;
+
+    background-color: white;
+
+    .align_middle;
+}
+
+#favorites_header {
+    height: 40px;
+
+    background:#646464 url(img/icon-heart.png) no-repeat 50px 50%;
+    .rounded_corners_top;
+    text-align: center;
+    vertical-align: middle;
+
+    color: #454545;
+    font-size: 13pt;
+    font-weight: bold;
+    line-height: 2.3em;
+    font-family: Helvetica, Arial, sans-serif;
+    .text_shadow_grey;
+}
+
+.favorite_entity {
+    height: 50px;
+    border-bottom: 1px solid #dbdbdb;
+    .cell_gradient;
+}

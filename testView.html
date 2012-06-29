@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/css/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet/less" type="text/css" href="/css/web_portal.less">
+    <link rel="stylesheet/less" type="text/css" href="/css/sidebar.less">
+    <link rel="stylesheet/less" type="text/css" href="/css/main_view.less">
+    <link rel="stylesheet/less" type="text/css" href="/css/comment_gutter.less">
+    <script src="/js/libs/less-1.3.0.min.js"></script>
+
+</head>
+<body>
+
+<div id="sidebar" class="span6">
+    <div id="search_box">
+        <input id="search_text" type="text" name="query" placeholder="Search" value class="placeholder">
+    </div>
+    <div id="favorites_bar">
+        <div id="favorites_header">Favorites</div>
+        <div class="favorite_entity"></div>
+    </div>
+</div>
+<div id="main_view" class="span11">
+    <div id="breadcrumbs" class="row">
+        <ul class="filecrumb">
+            <li>Dropbox</li>
+            <li class="filecrumb_arrow"></li>
+            <li>Alamgir</li>
+        </ul>
+    </div>
+    <div id="file_header" class="row">
+        <div class="span4">Name</div>
+        <div class="span2">Type</div>
+        <div class="span3">Last Modified</div>
+    </div>
+    <div id="file_container">
+        <div class="row">
+            <div class="file_entity span9 folder">
+                <div class="span4 file_title">File Title</div>
+                <div class="span2 file_info">File Type</div>
+                <div class="span3 file_info" >5/11/2012 6:03 PM</div>
+            </div>
+            <div class="action_comment span1"></div>
+            <div class="action_favorite span1"></div>
+            <div class="action_delete span1"></div>
+        </div>
+        <div class="row">
+            <div class="file_entity span9 entity_selected folder_selected">
+                <div class="span4 file_title">File Title</div>
+                <div class="span2 file_info">File Type</div>
+                <div class="span3 file_info" >5/11/2012 6:03 PM</div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="span6 gutter_container">
+    <div id="comment_arrow"></div>
+    <div id="comment_gutter">
+        <div class="file_comment">
+            <div class="message">This is a message. It can be as long as it wants, it'll just wrap</div>
+            <div class="message_footer">
+                <div class="message_author">Alamgir</div>
+                <div class="message_time">30 Minutes Ago</div>
+            </div>
+            <div class="color_tag"></div>
+        </div>
+        <div class="file_event modified">
+            <strong>Alamgir</strong> modified this file.
+            <div class="event_time">20 Minutes Ago</div>
+        </div>
+    </div>
+    <input id="comment_box" type="text" name="comment" placeholder="Enter a comment..." value class="placeholder">
+</div>
+
+</body>
+</html>

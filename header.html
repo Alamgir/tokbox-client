@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<div class="header_base">
+    <img id="logo_img" src="/img/tokbox_logo.png" />
+    <div id="logged_out" class="header_right">
+        <span id="sign_in">Sign In</span>
+    </div>
+    <div id="logged_in" class="header_right">
+        <span id="header_profile">{{this.display_name}}</span>
+    </div>
+</div>
+
+
+        <div class="alert alert-error">
+            <button class="close" data-dismiss="alert">x</button>
+            <h4 class="alert-heading">{{this.title}}</h4>
+            {{this.message}}
+        </div>
+<div class="alert alert-success">
+    <button class="close" data-dismiss="alert">x</button>
+    <h4 class="alert-heading">{{this.title}}</h4>
+    {{this.message}}
+</div>
+<div class="alert alert-info">
+    <button class="close" data-dismiss="alert">x</button>
+    <h4 class="alert-heading">{{this.title}}</h4>
+    {{this.message}}
+</div>
+

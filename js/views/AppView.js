@@ -8,7 +8,7 @@
 var AppView = Backbone.View.extend({
 
     events : {
-        //Navigation/header events go up here
+        "click #header_profile": "account"
     },
 
     initialize: function() {
@@ -19,7 +19,11 @@ var AppView = Backbone.View.extend({
         var source   = $("#appView-template").html();
         var template = Handlebars.compile(source);
         $('#header').html(template);
-    }
+        $('#logged_in').hide();
+    },
 
+    account: function() {
+        App.router.navigate("account", true);
+    }
 });
 
