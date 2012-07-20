@@ -6,6 +6,17 @@
  * To change this template use File | Settings | File Templates.
  */
 
+if (!Tokbox) {
+    var Tokbox = {};
+}
+
+Tokbox.alert = function(alert_type) {
+    $('.alert').remove();
+    var alert_html = App.template.alert(alert_type);
+    $('#app').append(alert_html);
+    $('.alert').hide().fadeIn('slow').delay(2000).fadeOut('slow');
+};
+
 var App = {
     initialize: function() {
 

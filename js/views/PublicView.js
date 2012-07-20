@@ -95,8 +95,10 @@ var PublicView = Backbone.View.extend({
                     title: "Error Accessing Network",
                     message: "Whoops, something went wrong. Don't worry we're on it!"
                 };
-                alert_html = App.template.alert(error);
-                $('#app').append(alert_html);
+                //Alert(error);
+                Tokbox.alert(error);
+                //alert_html = App.template.alert(error);
+                //$('#app').html(alert_html);
             }
         })
     }
