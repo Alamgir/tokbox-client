@@ -21,7 +21,9 @@ var PublicView = Backbone.View.extend({
     },
 
     render: function() {
-
+        $('#app').html($(this.el));
+        this.delegateEvents();
+        return this;
     },
 
     start_auth: function() {
@@ -71,7 +73,11 @@ var PublicView = Backbone.View.extend({
     login: function() {
         //we have the access token
         var access_token = $.jStorage.get("access_token");
-        var access_token_data = {access_token: access_token.token, access_secret: access_token.secret};
+        var access_token_data = {
+            access_token: access_token.token,
+            access_secret: access_token.secret,
+            access_rawResponse: access_token.rawResponse
+        };
         var json_data = JSON.stringify(access_token_data);
         $.ajax({
             type: 'POST',

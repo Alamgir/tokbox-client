@@ -13,7 +13,7 @@ var HomeView = Backbone.View.extend({
 
     events : {
         "click .file_entity":   "file_entity",
-        "click #breadcrumbs ul":   "breadcrumb"
+        "click .filecrumb":     "breadcrumb"
     },
 
     initialize: function() {
@@ -32,6 +32,7 @@ var HomeView = Backbone.View.extend({
         //var template_main_view = Handlebars.compile(main_view_source);
 
 
+        $('#app').html(this.$el);
         $('#file_container').empty();
         var file_data = App.file_data;
         for (var i=0; i<file_data.contents.length; i++) {
@@ -44,7 +45,7 @@ var HomeView = Backbone.View.extend({
         //var template = Handlebars.compile(source);
         //$(this.el).html(template);
         //$('#app').append(this.el);
-        //this.delegateEvents();
+        this.delegateEvents();
 
         return this;
     },
@@ -99,7 +100,7 @@ var HomeView = Backbone.View.extend({
 
     set_breadcrumbs: function() {
         //gather the necessary parts of the path into an array
-        $('.filecrumb').empty();
+        $('.filecrumb_list').empty();
         var file_data = App.file_data;
         var root = [file_data.root];
         var crumb_array = root.concat(file_data.path.split("/"));
