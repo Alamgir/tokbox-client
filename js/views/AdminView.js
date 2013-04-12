@@ -27,7 +27,7 @@ var AdminView = Backbone.View.extend({
             var admin_data = App.admin_data;
             for (var i=0; i<admin_data.users.length; i++) {
                 //add each light data to the App.admin_data.users.lights
-                //for each light in App.admin_data.users[i].lightsp
+                //for each light in App.admin_data.users[i].lights
                     //the light_id is App.admin_data.users[i].lights.id
                     //look up the light by id -> App.hue_data_lights[light_id]
                 
