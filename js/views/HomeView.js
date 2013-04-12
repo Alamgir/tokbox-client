@@ -13,41 +13,127 @@ var HomeView = Backbone.View.extend({
 
     events : {
         "click .file_entity":   "file_entity",
-        "click .filecrumb":     "breadcrumb"
+        "click .filecrumb":     "breadcrumb",
+        "change .light_switch": "light_switch"
     },
 
     initialize: function() {
         _.bindAll(this, 'render', "path", "breadcrumb", "set_breadcrumbs");
 
         this.$el.html(App.template.main);
-        $('#app').html(this.$el);
+        //$('#app').html(this.$el);
     },
 
     render: function() {
-        //Pass in the user to the account info template
-        //Pass in the file info to the file_view template
-        //var entity_template_source   = $("#entityView-template").html();
-        //var entity_template = Handlebars.compile(entity_template_source);
-        //var main_view_source = $("#mainView-template").html();
-        //var template_main_view = Handlebars.compile(main_view_source);
-
-
+        
+        
         $('#app').html(this.$el);
-        $('#file_container').empty();
-        var file_data = App.file_data;
-        for (var i=0; i<file_data.contents.length; i++) {
-            var file_html = App.template.entity(file_data.contents[i]);
-            $('#file_container').append(file_html);
+
+        if (App.user.approved || App.user.admin) {
+            //The user is an admin or is approved
+            $('#light_container').empty();
+            var light_data = App.hue_data.lights;
+            for (var i=0; i<light_data.length; i++) {
+                var light_html = App.template.entity(light_data[i]);
+                $('#light_container').append(light_html);
+            }
+            
+            if (App.user.admin) {
+                //the user is an admin, render the admin button
+                var admin_button_html = $('<button id="admin_save_button">Save Changes</button>');
+                $('#light_container').append(admin_button_html);
+            }
+            
         }
-
-        this.set_breadcrumbs();
-
-        //var template = Handlebars.compile(source);
-        //$(this.el).html(template);
-        //$('#app').append(this.el);
+        else {
+            //indicate that the user has yet to be approved, render the awaiting approval message
+            
+        }
+        
         this.delegateEvents();
 
         return this;
+    },
+    
+    light_switch: function(event) {
+        var light_id = $(event.currentTarget).parent.attr("light_id");
+        var light_name = $(event.currentTarget).parent.attr("light_name");
+        
+        var current_light_state = App.hue_data.lights[light_id-1].state.on;
+        
+        var new_light_state = $(event.currentTarget).val();
+        
+        $.ajax({
+           type: "PUT",
+           url: 'http://localhost:8080/lights/switch',
+           data: JSON.stringify({light_state: new_light_state}),
+           dataType: 'json',
+           statusCode: {
+               500 : function(jqXHR, textStatus, errorThrown) {
+                   Tokbox.alert({
+                       error: "true",
+                       title: "Unsuccessful Operation",
+                       message: "Couldn't switch the light state"
+                   });
+                   
+                   //Reset the slider
+                   $(event.currentTarget).val(current_light_state);
+               },
+               200: function(data) {
+                   App.hue_data.lights[light_id-1].state.on = new_light_state;
+                   
+                   var state_text = "";
+                   if (new_light_state === false) {
+                       state_text = "on";
+                   }
+                   else {
+                       state_text = "off";
+                   }
+                   
+                   
+                   Tokbox.alert({
+                       error: "success",
+                       title: "Successful Operation",
+                       message: light_name + " is now " + state_text + "!"
+                   });
+                   
+                   //update the UI to show the light is on
+               }
+           }
+        });
+    },
+    
+    refresh_user: function() {
+        //We already had the user in jStorage, so we're just refreshing from the server
+        //the server should have the client authenticated already with a session cookie
+        $.ajax({
+            type: 'GET',
+            url: 'http://localhost:8080/users/info',
+            dataType: 'json',
+            statusCode: {
+                400 : function(jqXHR, textStatus, errorThrown) {
+                    Tokbox.alert({
+                        error:"true",
+                        title:"Bad Login",
+                        message:"You haven't logged in yet!"
+                    });
+                },
+                200 : function(data) {
+                    App.user = data.user_data;
+                    App.hue_data = data.hue_data;
+                    $.jstorage.set("user", data.user_data);
+                    $.jstorage.set("hue", data.hue_data);
+                }
+            },
+            error: function(jqXHR, textStatus, errorThrown) {
+                var error = {
+                    error: "true",
+                    title: "Error Accessing Network",
+                    message: "Whoops, something went wrong. Don't worry we're on it!"
+                };
+                Tokbox.alert(error);
+            }
+        });
     },
 
     file_entity: function(event) {

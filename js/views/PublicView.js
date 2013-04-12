@@ -8,16 +8,14 @@
 var PublicView = Backbone.View.extend({
 
     events : {
-        "click #start":    "start_auth"
+        "click #login":    "login"
     },
 
     initialize: function() {
-        _.bindAll(this, 'render', "start_auth", "resume_auth");
+        _.bindAll(this, 'render', "login", "admin_data");
 
-        var source   = $("#publicView-template").html();
-        var template = Handlebars.compile(source);
-        $(this.el).html(template);
-        $('#app').append(this.el);
+        this.$el.html(App.template.public);
+        //$('#app').html(this.el);
     },
 
     render: function() {
@@ -72,27 +70,73 @@ var PublicView = Backbone.View.extend({
 
     login: function() {
         //we have the access token
-        var access_token = $.jStorage.get("access_token");
-        var access_token_data = {
-            access_token: access_token.token,
-            access_secret: access_token.secret,
-            access_rawResponse: access_token.rawResponse
-        };
-        var json_data = JSON.stringify(access_token_data);
+        var username = $('#username_val').val();
+        var password = $('#password_val').val();
+        if (username != undefined && password != undefined) {
+            var login_data = JSON.stringify({username:username,password:password});        
+            $.ajax({
+                type: 'POST',
+                url: 'http://localhost:8080/users/login',
+                data: login_data,
+                dataType: 'json',
+                statusCode: {
+                    400 : function(jqXHR, textStatus, errorThrown) {
+                        Tokbox.alert({
+                            error:"true",
+                            title:"Bad Login",
+                            message:"Wrong Credentials"
+                        });
+                    },
+                    200 : function(data) {
+                        App.user = data.user_data;
+                        App.hue_data = data.hue_data;
+                        if (App.user.admin) {
+                            //the user is an admin, get Admin data
+                            this.admin_data();
+                        }
+                        
+                        
+                        $.jstorage.set("user", data.user_data);
+                        $.jstorage.set("hue", data.hue_data);
+                        App.router.navigate("home", true);
+                    }
+                },
+                error: function(jqXHR, textStatus, errorThrown) {
+                    var error = {
+                        error: "true",
+                        title: "Error Accessing Network",
+                        message: "Whoops, something went wrong. Don't worry we're on it!"
+                    };
+                    Tokbox.alert(error);
+                }
+            });
+        }
+        else {
+            Tokbox.alert({
+                error:"true",
+                title:"Missing Info",
+                message:"You left one of the fields blank."
+            });
+        }
+        
+    },
+    
+    admin_data: function() {
         $.ajax({
-            type: 'POST',
-            url: 'http://localhost:8080/users/login',
-            data: json_data,
+            type: 'GET',
+            url: 'http://localhost:8080/users/admin_data',
             dataType: 'json',
             statusCode: {
                 400 : function(jqXHR, textStatus, errorThrown) {
-                    alert("Error getting access token");
+                    Tokbox.alert({
+                        error:"true",
+                        title:"Bad Login",
+                        message:"User isn't admin"
+                    });
                 },
                 200 : function(data) {
-                    App.user = data.user_data;
-                    App.access_token = data.access_token;
-                    App.file_data = data.root_data;
-                    App.router.navigate("home", true);
+                    App.admin_data = data;
+                    $.jstorage.set("admin", data);
                 }
             },
             error: function(jqXHR, textStatus, errorThrown) {
@@ -101,12 +145,9 @@ var PublicView = Backbone.View.extend({
                     title: "Error Accessing Network",
                     message: "Whoops, something went wrong. Don't worry we're on it!"
                 };
-                //Alert(error);
                 Tokbox.alert(error);
-                //alert_html = App.template.alert(error);
-                //$('#app').html(alert_html);
             }
-        })
+        });
     }
 
 });

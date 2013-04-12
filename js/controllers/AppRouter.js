@@ -19,7 +19,8 @@ var AppRouter = Backbone.Router.extend({
     initialize: function(options) {
         _.bindAll(this, "index", "auth", "home", "setBody");
 
-        this.views.app = new AppView({ el : $('body') });
+        //this.views.app = new AppView({ el : $('body') });
+        this.views.app = new AppView();
         this.views.pub = new PublicView();
         this.views.home = new HomeView();
 
@@ -31,8 +32,17 @@ var AppRouter = Backbone.Router.extend({
     },
 
     index: function() {
-        var access_token = $.jStorage.get("access_token");
-        if (!access_token) {
+        // var access_token = $.jStorage.get("access_token");
+        // if (!access_token) {
+        //     this.setBody(this.views.pub);
+        //     this.view.body.render();
+        // }
+        // else {
+        //     this.navigate("home", true);
+        // }
+        
+        var user = $.jStorage.get("user");
+        if (!user) {
             this.setBody(this.views.pub);
             this.view.body.render();
         }

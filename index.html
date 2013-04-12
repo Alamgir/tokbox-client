@@ -40,31 +40,32 @@
     <script id="appView-template" type="text/x-handlebars-template">
         <div id="header_base">
             <img id="logo_img" src="/img/tokbox_logo.png" />
+            {{#if this.display_name}}
             <div id="logged_in" class="header_right">
                 <span id="header_profile">{{this.display_name}}</span>
             </div>
+            {{/if}}
         </div>
-
     </script>
 
     <script id="alertView-template" type="text/x-handlebars-template">
         {{#if this.error}}
         <div class="alert alert-error">
-            <button class="close" data-dismiss="alert">x</button>
+            <button type="button" class="close" data-dismiss="alert">x</button>
             <h4 class="alert-heading">{{this.title}}</h4>
             {{this.message}}
         </div>
         {{/if}}
         {{#if this.success}}
         <div class="alert alert-success">
-            <button class="close" data-dismiss="alert">x</button>
+            <button type="button" class="close" data-dismiss="alert">x</button>
             <h4 class="alert-heading">{{this.title}}</h4>
             {{this.message}}
         </div>
         {{/if}}
         {{#if this.info}}
         <div class="alert alert-info">
-            <button class="close" data-dismiss="alert">x</button>
+            <button type="button" class="close" data-dismiss="alert">x</button>
             <h4 class="alert-heading">{{this.title}}</h4>
             {{this.message}}
         </div>
@@ -72,10 +73,65 @@
     </script>
 
     <script id="publicView-template" type="text/x-handlebars-template">
-        <div id="auth_button">
-            <input type="button" id="start" value="Log into dropbox" />
+        <div id="login">
+            <input type="text" id="username_val" placeholder="Username" />
+            <input type="password" id="password_val" placeholder="Password" />
+            <input type="button" id="login" value="Log in" />
         </div>
     </script>
+    
+    <script id="mainView-template" type="text/x-handlebars-template">
+        <div id="light_container">
+            
+        </div>
+    </script>
+    
+    </script id="adminView-template" type="text/x-handlebars-template">
+        <div id="admin_container">
+            
+        </div>
+        <button id="admin_save_button">Save Changes</button>            
+        </div>
+    </script>
+    
+    <!-- Change entity view templates to be <li> elements for jQuery Mobile -->
+    
+    <script id="entityView-template" type="text/x-handlebars-template">
+        <div class="row">
+            <div id="{{this.id}}" class="light_entity span9 {{this.type}}" light_name="{{this.name}}" type="{{this.type}}" light_id="{{this.id}}">
+                <div class="span4 light_name">{{this.name}}</div>
+                //<div class="span2 file_info">{{this.icon}}</div>
+                //<div class="span3 file_info" >{{this.modified}}</div>
+                //<div class="action_switch span1"></div>
+                <select name="light_switch" class="light_switch" data-role="slider">
+                    <option value="false">Off</option>
+                    <option value="true">On</option>
+                </select>
+            </div>
+            //<div class="action_comment span1"></div>
+            //<div class="action_favorite span1"></div>
+            //<div class="action_delete span1"></div>
+        </div>
+    </script>
+    
+    
+    <script id="adminEntityView-template" type="text/x-handlebars-template">
+        <div class="admin_entity">
+            <div class="entity_heading" id="{{this.username}}" username="{{this.username}}" user_id="{{this.id}}">
+                {{this.username}}
+                <select name="approve_switch" class="approve_switch" data-role="slider">
+                    <option value ="false">Denied</option>
+                    <option value="true">Approved</option>
+                </select>                
+            </div>
+            <div id="{{this.username}}_options" class="entity_options collapse">
+                //List the lights here - these only show when the user has been approved
+                //TODO change the template to use a {{# each this.lights}} tag
+            </div>
+        </div>
+    </script>
+
+<!--OLDER TEMPLATES
 
     <script id="mainView-template" type="text/x-handlebars-template">
         <div id="sidebar" class="span6">
@@ -133,6 +189,8 @@
             <div class="action_delete span1"></div>
         </div>
     </script>
+
+-->
 
     <!--<script data-main="/js/main.js" src="/js/require.js"></script>-->
 

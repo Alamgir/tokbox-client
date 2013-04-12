@@ -6,6 +6,9 @@
  * To change this template use File | Settings | File Templates.
  */
 var AppView = Backbone.View.extend({
+    attributes: {
+        id: "header_base"
+    },
 
     events : {
         "click #header_profile": "account"
@@ -13,13 +16,17 @@ var AppView = Backbone.View.extend({
 
     initialize: function() {
         _.bindAll(this, 'render');
+        
+        this.$el.html(App.template.app_view)
     },
 
     render: function() {
-        var source   = $("#appView-template").html();
-        var template = Handlebars.compile(source);
-        $('#header').html(template);
-        $('#logged_in').hide();
+        $('#header').html(this.$el);
+    },
+    
+    logged_in: function() {
+        this.$el.html(App.template.app_view(App.user));
+        this.render();
     },
 
     account: function() {
