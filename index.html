@@ -82,15 +82,7 @@
     
     <script id="mainView-template" type="text/x-handlebars-template">
         <div id="light_container">
-            
-        </div>
-    </script>
-    
-    </script id="adminView-template" type="text/x-handlebars-template">
-        <div id="admin_container">
-            
-        </div>
-        <button id="admin_save_button">Save Changes</button>            
+            //light_entity goes in here
         </div>
     </script>
     
@@ -98,7 +90,7 @@
     
     <script id="entityView-template" type="text/x-handlebars-template">
         <div class="row">
-            <div id="{{this.id}}" class="light_entity span9 {{this.type}}" light_name="{{this.name}}" type="{{this.type}}" light_id="{{this.id}}">
+            <div id="{{this.name}}" class="light_entity span9 {{this.type}}" light_name="{{this.name}}" type="{{this.type}}" light_id="{{this.id}}">
                 <div class="span4 light_name">{{this.name}}</div>
                 //<div class="span2 file_info">{{this.icon}}</div>
                 //<div class="span3 file_info" >{{this.modified}}</div>
@@ -114,19 +106,33 @@
         </div>
     </script>
     
+        
+    <script id="adminView-template" type="text/x-handlebars-template">
+        <div id="admin_light_list">
+            //admin_light_entity goes here
+        </div>
+        <button id="admin_save_button">Save Changes</button>            
+    </script>
     
-    <script id="adminEntityView-template" type="text/x-handlebars-template">
-        <div class="admin_entity">
-            <div class="entity_heading" id="{{this.username}}" username="{{this.username}}" user_id="{{this.id}}">
+    
+    <script id="adminUserEntityView-template" type="text/x-handlebars-template">
+        <div class="row admin_user_entity">
+            <div class="user_entity_heading" id="{{this.username}}" username="{{this.username}}" user_id="{{this.id}}">
                 {{this.username}}
                 <select name="approve_switch" class="approve_switch" data-role="slider">
                     <option value ="false">Denied</option>
                     <option value="true">Approved</option>
                 </select>                
             </div>
-            <div id="{{this.username}}_options" class="entity_options collapse">
-                //List the lights here - these only show when the user has been approved
-                //TODO change the template to use a {{# each this.lights}} tag
+        </div>
+    </script>
+    
+    <script id="adminLightEntityView-template" type="text/x-handlebars-template">
+        <div class="row admin_light_entity">
+            <div class="light_entity_heading" id="{{this.name}}" name="{{this.name}}" light_id="{{this.id}}"
+                <div class="admin_light_users_list">
+                    //admin_user_entity goes in here
+                </div>
             </div>
         </div>
     </script>
@@ -213,7 +219,7 @@ chromium.org/developers/how-tos/chrome-frame-getting-started -->
   <!-- JavaScript at the bottom for fast page loading -->
 
   <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
-  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="/js/libs/jquery-1.7.1.min.js"><\/script>')</script>
 
   <!-- scripts concatenated and minified via build script -->
@@ -224,12 +230,13 @@ chromium.org/developers/how-tos/chrome-frame-getting-started -->
   <script src="/js/libs/jstorage.min.js"></script>
   <!-- end scripts -->
 
-  <!--backbone scripts-->
+<!--backbone scripts-->
     <script src="/js/main.js"></script>
     <script src="/js/controllers/AppRouter.js"></script>
     <script src="/js/views/AppView.js"></script>
     <script src="/js/views/HomeView.js"></script>
     <script src="/js/views/PublicView.js"></script>
+<!-- end backbone scrips-->
 
 
   <script type="text/javascript">

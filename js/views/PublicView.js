@@ -92,6 +92,8 @@ var PublicView = Backbone.View.extend({
                         App.hue_data = data.hue_data;
                         if (App.user.admin) {
                             //the user is an admin, get Admin data
+                            //TODO: consolidate the login call to get Admin data too
+                            // App.admin_data = data.admin_data;
                             this.admin_data();
                         }
                         

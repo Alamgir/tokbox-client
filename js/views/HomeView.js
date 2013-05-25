@@ -62,45 +62,47 @@ var HomeView = Backbone.View.extend({
         var current_light_state = App.hue_data.lights[light_id-1].state.on;
         
         var new_light_state = $(event.currentTarget).val();
-        
-        $.ajax({
-           type: "PUT",
-           url: 'http://localhost:8080/lights/switch',
-           data: JSON.stringify({light_state: new_light_state}),
-           dataType: 'json',
-           statusCode: {
-               500 : function(jqXHR, textStatus, errorThrown) {
-                   Tokbox.alert({
-                       error: "true",
-                       title: "Unsuccessful Operation",
-                       message: "Couldn't switch the light state"
-                   });
-                   
-                   //Reset the slider
-                   $(event.currentTarget).val(current_light_state);
-               },
-               200: function(data) {
-                   App.hue_data.lights[light_id-1].state.on = new_light_state;
-                   
-                   var state_text = "";
-                   if (new_light_state === false) {
-                       state_text = "on";
+        if (new_light_state != current_light_state) {
+            $.ajax({
+               type: "PUT",
+               url: 'http://localhost:8080/lights/switch',
+               data: JSON.stringify({light_state: new_light_state}),
+               dataType: 'json',
+               statusCode: {
+                   500 : function(jqXHR, textStatus, errorThrown) {
+                       Tokbox.alert({
+                           error: "true",
+                           title: "Unsuccessful Operation",
+                           message: "Couldn't switch the light state"
+                       });
+                       
+                       //Reset the slider
+                       $(event.currentTarget).val(current_light_state);
+                   },
+                   200: function(data) {
+                       App.hue_data.lights[light_id-1].state.on = new_light_state;
+                       
+                       var state_text = "";
+                       if (new_light_state === true) {
+                           state_text = "on";
+                       }
+                       else {
+                           state_text = "off";
+                       }
+                       
+                       
+                       Tokbox.alert({
+                           error: "success",
+                           title: "Successful Operation",
+                           message: light_name + " is now " + state_text + "!"
+                       });
+                       
+                       //update the UI to show the light is on
                    }
-                   else {
-                       state_text = "off";
-                   }
-                   
-                   
-                   Tokbox.alert({
-                       error: "success",
-                       title: "Successful Operation",
-                       message: light_name + " is now " + state_text + "!"
-                   });
-                   
-                   //update the UI to show the light is on
                }
-           }
-        });
+            });
+        }
+        
     },
     
     refresh_user: function() {
@@ -123,6 +125,7 @@ var HomeView = Backbone.View.extend({
                     App.hue_data = data.hue_data;
                     $.jstorage.set("user", data.user_data);
                     $.jstorage.set("hue", data.hue_data);
+
                 }
             },
             error: function(jqXHR, textStatus, errorThrown) {

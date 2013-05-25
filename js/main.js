@@ -56,8 +56,13 @@ var App = {
         var admin_template_source = $('#adminView-template').html();
         this.template.admin = Handlebars.compile(admin_template_source);
         
-        var admin_entity_template_source = $('#adminentityView-template').html();
-        this.template.admin_entity = Handlebars.compile(admin_entity_template_source);
+        var admin_user_entity_template_source = $('#adminUserEntityView-template').html();
+        this.template.admin_entity_user = Handlebars.compile(admin_user_entity_template_source);
+        
+        var admin_light_entity_template_source = $('#adminLightEntityView-template')
+        this.template.admin_entity_light = Handlebars.compile(admin_light_entity_template_source);
+        
+        
 
         this.router = new AppRouter();
         Backbone.history.start({pushState: true});
