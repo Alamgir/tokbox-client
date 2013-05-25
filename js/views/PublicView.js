@@ -8,7 +8,7 @@
 var PublicView = Backbone.View.extend({
 
     events : {
-        "click #login_button":    "login"
+        "click #login":    "login"
     },
 
     initialize: function() {
@@ -72,7 +72,7 @@ var PublicView = Backbone.View.extend({
         //we have the access token
         var username = $('#username_val').val();
         var password = $('#password_val').val();
-        if (username != "" && password != "") {
+        if (username != undefined && password != undefined) {
             var login_data = JSON.stringify({username:username,password:password});        
             $.ajax({
                 type: 'POST',

@@ -45,5 +45,5 @@ var AdminLightEntityView = Backbone.View.extend({
 
         return this;
     }
-    
+
 });
