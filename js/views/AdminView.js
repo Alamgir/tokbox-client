@@ -6,7 +6,6 @@ var AdminView = Backbone.View.extend({
     },
 
     events : {
-        "change .approve_switch": "approve_user",
         "click #admin_save_button": "save_state"
     },
 
@@ -51,7 +50,7 @@ var AdminView = Backbone.View.extend({
         
         this.delegateEvents();    
         
-        //************************ BEGIN NEW VIEW CODE HERE ************************************************
+        //******************************************* BEGIN NEW VIEW CODE HERE ************************************************
         // add to initialize
         /*
         this.light_views = [];
@@ -67,67 +66,6 @@ var AdminView = Backbone.View.extend({
         */
         
         return this;
-    },
-    
-    approve_user: function(event) {
-        //uncollapse the element
-        var username = $(event.currentTarget).parent.attr("username");
-        var light_id = $(event.currentTarget).closest('.light_entity_heading').attr("light_id");
-        //what is the user's current state with this light?
-        var user = App.admin_data.users[username];
-        var light = user.lights[light_id];
-        
-        var current_approved_state = light.approved;
-        
-        var new_approved_state = $(event.currentTarget).val();
-        if (new_approved_state != current_approved_state) {
-            $.ajax({
-               type: "PUT",
-               url: 'http://localhost:8080/admin/approve_user',
-               data: JSON.stringify({
-                                    user_id: user.id, 
-                                    light_id: light_id,
-                                    approved: new_approved_state
-                                    }),
-               dataType: 'json',
-               statusCode: {
-                   500 : function(jqXHR, textStatus, errorThrown) {
-                       Tokbox.alert({
-                           error: "true",
-                           title: "Unsuccessful Operation",
-                           message: "Couldn't switch the light state"
-                       });
-                       
-                       //Reset the slider
-                       $(event.currentTarget).val(current_approved_state);
-                   },
-                   200: function(data) {
-                       user.lights[light_id].approved = new_approved_state;
-                       
-                       var state_text = "";
-                       if (new_approved_state === true) {
-                           state_text = "Approved";
-                       }
-                       else {
-                           state_text = "Denied";
-                       }
-                       
-                       
-                       Tokbox.alert({
-                           error: "success",
-                           title: "Successful Operation",
-                           message: username + " is now " + state_text + " from " + light.name + "!"
-                       });
-                       
-                       //update the UI to show the light is on
-                   }
-               }
-            });
-        }
-        
-        $('#'+username+'_options').collapse('show');
-        
-        
     }
     
     

@@ -72,7 +72,7 @@ var PublicView = Backbone.View.extend({
         //we have the access token
         var username = $('#username_val').val();
         var password = $('#password_val').val();
-        if (username != undefined && password != undefined) {
+        if (username != "" && password != "") {
             var login_data = JSON.stringify({username:username,password:password});        
             $.ajax({
                 type: 'POST',
