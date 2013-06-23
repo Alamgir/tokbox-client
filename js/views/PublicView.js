@@ -73,7 +73,7 @@ var PublicView = Backbone.View.extend({
         var username = $('#username_val').val();
         var password = $('#password_val').val();
         if (username != "" && password != "") {
-            var login_data = JSON.stringify({username:username,password:password});        
+            var login_data = JSON.stringify({username:username,password:password});
             $.ajax({
                 type: 'POST',
                 url: 'http://localhost:8080/users/login',
@@ -90,14 +90,7 @@ var PublicView = Backbone.View.extend({
                     200 : function(data) {
                         App.user = data.user_data;
                         App.hue_data = data.hue_data;
-                        if (App.user.admin) {
-                            //the user is an admin, get Admin data
-                            //TODO: consolidate the login call to get Admin data too
-                            // App.admin_data = data.admin_data;
-                            this.admin_data();
-                        }
-                        
-                        
+
                         $.jstorage.set("user", data.user_data);
                         $.jstorage.set("hue", data.hue_data);
                         App.router.navigate("home", true);
@@ -120,9 +113,9 @@ var PublicView = Backbone.View.extend({
                 message:"You left one of the fields blank."
             });
         }
-        
+
     },
-    
+
     admin_data: function() {
         $.ajax({
             type: 'GET',
