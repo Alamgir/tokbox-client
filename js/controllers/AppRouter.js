@@ -11,7 +11,8 @@ var AppRouter = Backbone.Router.extend({
         "auth":                 "auth",
         "home":                 "home",
         "path/*path":            "path",
-        "login":                "login"
+        "login":                "login",
+        "admin":                "admin"
     },
 
     views: {},
@@ -22,6 +23,7 @@ var AppRouter = Backbone.Router.extend({
         this.views.app = new AppView();
         this.views.pub = new PublicView();
         this.views.home = new HomeView();
+        this.views.admin = new AdminView();
 
         this.view = this.views.app;
         this.view.render();
@@ -64,6 +66,14 @@ var AppRouter = Backbone.Router.extend({
         this.setBody(this.views.pub);
         this.view.body.render();
         this.view.body.login();
+    },
+
+    admin : function() {
+        if (App.user.admin) {
+            this.setBody(this.views.admin);
+            this.view.body.render();
+        }
+        else this.navigate("", true);
     },
 
     setBody: function(view, auth) {

@@ -59,7 +59,7 @@ var App = {
         var admin_user_entity_template_source = $('#adminUserEntityView-template').html();
         this.template.admin_entity_user = Handlebars.compile(admin_user_entity_template_source);
         
-        var admin_light_entity_template_source = $('#adminLightEntityView-template')
+        var admin_light_entity_template_source = $('#adminLightEntityView-template').html();
         this.template.admin_entity_light = Handlebars.compile(admin_light_entity_template_source);
         
         
@@ -73,6 +73,26 @@ var App = {
 
 
 
+
+    },
+
+    reuse_views : function(view_array, num_models) {
+        var size_diff = _.size(view_array) - num_models;
+
+        if (size_diff > 0) {
+            //size > 0 means that there more views than necessary
+            for (var i=1;i<size_diff;i++) {
+                view_array[i].remove();
+            }
+            view_array.splice(0, size_diff);
+        }
+        else if (size_diff < 0) {
+            //size < 0 means that there are fewer views than necessary
+            for (var i=1;i<size_diff;i++) {
+                var new_view = new LightEntityView();
+                view_array.push(new_view);
+            }
+        }
 
     }
 };

@@ -6,11 +6,14 @@ var AdminView = Backbone.View.extend({
     },
 
     events : {
-        "click #admin_save_button": "save_state"
+        //"click #admin_save_button": "save_state"
     },
 
     initialize: function() {
-        _.bindAll(this, 'render', "approve_user", "save_state");
+        _.bindAll(this, 'render'
+                        //"approve_user",
+                        //"save_state"
+                                    );
 
         this.light_views = [];
 
@@ -19,50 +22,31 @@ var AdminView = Backbone.View.extend({
 
     render: function() {
         
-        
         $('#app').html(this.$el);
 
-        _.each(App.hue_data.lights, function(light) {
-            var light_view = new AdminLightEntityView({
-                model : light,
-                admin_light_list : $('#admin_light_list')
-            });
-            this.light_views.push(light_view);
-            light_view.render();
-        });
+        var first_render = _.isEmpty(this.light_views);
 
-
-        /*
-        -------------------OLD CODE--------------
-        //The user is an admin or is approved            
-        if (App.user.admin) {
-            
-            // append each light to the admin_light_list
-            _.each(App.hue_data.lights, function(light) {
-                var light_html = App.template.admin_entity_light(light);
-                $('#admin_light_list').append(light_html);
-                   
-                _.each(App.admin_data.users, function(user) {
-                    var user_html = App.template.admin_entity_user(user);  
-                    var admin_users_list = $('.admin_light_entity #' + light.name + ' .admin_light_users_list');
-                    admin_users_list.append(user_html);
-                    
-                    //get the user's state with the light, set it in UI
-                    var approval_state = user.lights[light.id].approved;
-                    $('.user_entity_heading #' + user.username + ' .approve_switch').val(approval_state);
+        _.each(App.hue_data.lights, function(light, indx) {
+            if (first_render) {
+                var light_view = new AdminLightEntityView({
+                    model : light,
+                    admin_light_list : $('#admin_light_list')
                 });
-            });
-            
-            //append each user to each light, also check the user's current approval with the light
-            
-        }
-        else {
-            //the user isn't an admin, get them the fuck out of here
-            AppRouter.navigate("home", true);
-        }
-        ---------------------END OLD CODE----------------
-        */
-        
+                this.light_views.push(light_view);
+            }
+            else {
+                var view_in_array = this.light_views[indx];
+                view_in_array.model = light;
+                view_in_array.options.admin_light_list = $('#admin_light_list');
+            }
+        }, this);
+
+        //render everything in the views array
+        _.each(this.light_views, function(light_view) {
+            light_view.render();
+        }, this);
+
+
         this.delegateEvents();
         
         return this;

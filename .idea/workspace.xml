@@ -2,20 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b0a706f5-97de-4f10-b2a5-536267d86ab3" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/views/LightEntityView.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/views/AdminLightEntityView.js" afterPath="$PROJECT_DIR$/js/views/AdminLightEntityView.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/views/AdminUserEntityView.js" afterPath="$PROJECT_DIR$/js/views/AdminUserEntityView.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/views/AdminView.js" afterPath="$PROJECT_DIR$/js/views/AdminView.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controllers/AppRouter.js" afterPath="$PROJECT_DIR$/js/controllers/AppRouter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/views/HomeView.js" afterPath="$PROJECT_DIR$/js/views/HomeView.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/views/PublicView.js" afterPath="$PROJECT_DIR$/js/views/PublicView.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tokbox.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="b0a706f5-97de-4f10-b2a5-536267d86ab3" time="1371976097585" ignored="false" />
+    <file path="/Dummy.txt" changelist="b0a706f5-97de-4f10-b2a5-536267d86ab3" time="1372536380279" ignored="false" />
     <file path="/a.js" changelist="b0a706f5-97de-4f10-b2a5-536267d86ab3" time="1371941940991" ignored="false" />
-    <file path="/AdminView.js" changelist="b0a706f5-97de-4f10-b2a5-536267d86ab3" time="1371942301865" ignored="false" />
-    <file path="/index.html" changelist="b0a706f5-97de-4f10-b2a5-536267d86ab3" time="1371944626696" ignored="false" />
-    <file path="/PublicView.js" changelist="b0a706f5-97de-4f10-b2a5-536267d86ab3" time="1371944636947" ignored="false" />
+    <file path="/AdminView.js" changelist="b0a706f5-97de-4f10-b2a5-536267d86ab3" time="1372629181831" ignored="false" />
+    <file path="/index.html" changelist="b0a706f5-97de-4f10-b2a5-536267d86ab3" time="1372138917775" ignored="false" />
+    <file path="/PublicView.js" changelist="b0a706f5-97de-4f10-b2a5-536267d86ab3" time="1372491491449" ignored="false" />
+    <file path="/AppRouter.js" changelist="b0a706f5-97de-4f10-b2a5-536267d86ab3" time="1371978755036" ignored="false" />
+    <file path="/HomeView.js" changelist="b0a706f5-97de-4f10-b2a5-536267d86ab3" time="1372629053516" ignored="false" />
+    <file path="/LightEntityView.js" changelist="b0a706f5-97de-4f10-b2a5-536267d86ab3" time="1372538773692" ignored="false" />
+    <file path="/AdminLightEntityView.js" changelist="b0a706f5-97de-4f10-b2a5-536267d86ab3" time="1372631947306" ignored="false" />
+    <file path="/main.js" changelist="b0a706f5-97de-4f10-b2a5-536267d86ab3" time="1372625637229" ignored="false" />
+    <file path="/AdminUserEntityView.js" changelist="b0a706f5-97de-4f10-b2a5-536267d86ab3" time="1372579079254" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +86,7 @@
           <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="103" column="55" selection-start="4650" selection-end="4650" vertical-scroll-proportion="0.0">
+                <state line="113" column="71" selection-start="4984" selection-end="4984" vertical-scroll-proportion="-28.115385">
                   <folding />
                 </state>
               </provider>
@@ -94,50 +104,34 @@
           <file leaf-file-name="testView.html" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/testView.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="8" column="54" selection-start="460" selection-end="460" vertical-scroll-proportion="0.0">
+                <state line="35" column="29" selection-start="1232" selection-end="1232" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="AppView.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="http://localhost:83/js/views/AppView.js">
-              <provider selected="true" editor-type-id="httpFileEditor">
-                <state />
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="AppRouter.js" pinned="false" current="false" current-in-tab="true">
-            <entry file="http://localhost:83/js/controllers/AppRouter.js">
-              <provider selected="true" editor-type-id="httpFileEditor">
-                <state />
+          <file leaf-file-name="AppRouter.js" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/js/controllers/AppRouter.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="79" column="61" selection-start="1966" selection-end="1966" vertical-scroll-proportion="0.9661692">
+                  <folding />
+                </state>
               </provider>
             </entry>
           </file>
           <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="http://localhost:83/js/main.js">
-              <provider selected="true" editor-type-id="httpFileEditor">
-                <state />
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="HomeView.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js/views/HomeView.js">
+            <entry file="file://$PROJECT_DIR$/js/main.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="37" column="57" selection-start="1064" selection-end="1064" vertical-scroll-proportion="0.0">
+                <state line="83" column="43" selection-start="2581" selection-end="2581" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="PublicView.js" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/js/views/PublicView.js">
+          <file leaf-file-name="HomeView.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/js/views/HomeView.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="105" column="17" selection-start="3859" selection-end="3859" vertical-scroll-proportion="0.67246836">
+                <state line="29" column="33" selection-start="661" selection-end="661" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -146,16 +140,20 @@
           <file leaf-file-name="AdminView.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/js/views/AdminView.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="16" column="42" selection-start="380" selection-end="380" vertical-scroll-proportion="0.0">
+                <state line="30" column="59" selection-start="756" selection-end="756" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="web_portal.less" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/css/web_portal.less">
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="PublicView.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/js/views/PublicView.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="100" column="43" selection-start="1440" selection-end="1440" vertical-scroll-proportion="0.0">
+                <state line="75" column="68" selection-start="2596" selection-end="2596" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -200,7 +198,25 @@
           <file leaf-file-name="AdminLightEntityView.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/js/views/AdminLightEntityView.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="25" column="46" selection-start="726" selection-end="726" vertical-scroll-proportion="0.0">
+                <state line="29" column="33" selection-start="809" selection-end="809" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="AdminUserEntityView.js" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/js/views/AdminUserEntityView.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="67" column="54" selection-start="2045" selection-end="2045" vertical-scroll-proportion="0.42987806">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="LightEntityView.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/js/views/LightEntityView.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="35" column="64" selection-start="1621" selection-end="1621" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -227,22 +243,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/js/views/AccountView.js" />
-        <option value="$PROJECT_DIR$/css/main_view.less" />
-        <option value="$PROJECT_DIR$/js/main.js" />
-        <option value="$PROJECT_DIR$/js/views/HomeView.js" />
-        <option value="$PROJECT_DIR$/css/web_portal.less" />
-        <option value="$PROJECT_DIR$/js/views/AdminView.js" />
         <option value="localhost:83/js/controllers/AppRouter.js" />
         <option value="localhost:83/js/views/AppView.js" />
         <option value="localhost:83/js/main.js" />
         <option value="localhost:83/js/libs/underscore-min.js" />
+        <option value="ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" />
+        <option value="localhost:83/js/views/PublicView.js" />
+        <option value="localhost:83/js/libs/backbone-min.js" />
         <option value="$PROJECT_DIR$/js/controllers/AppRouter.js" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="localhost:83/js/libs/backbone-min.js" />
-        <option value="localhost:83/js/views/PublicView.js" />
-        <option value="ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" />
+        <option value="$PROJECT_DIR$/js/views/LightEntityView.js" />
         <option value="$PROJECT_DIR$/js/views/PublicView.js" />
+        <option value="$PROJECT_DIR$/js/main.js" />
+        <option value="$PROJECT_DIR$/js/views/HomeView.js" />
+        <option value="$PROJECT_DIR$/js/views/AdminView.js" />
+        <option value="$PROJECT_DIR$/js/views/AdminUserEntityView.js" />
+        <option value="$PROJECT_DIR$/js/views/AdminLightEntityView.js" />
       </list>
     </option>
   </component>
@@ -354,6 +370,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="libs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tokbox" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tokbox-client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -382,16 +416,16 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="recentsLimit" value="5" />
-    <property name="restartRequiresConfirmation" value="true" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/index.html" />
+    <property name="restartRequiresConfirmation" value="true" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
-  <component name="PublishConfig" serverName="Apache - HueMate" serverId="35d1437c-11a1-4f8c-86ab-ee6de9a43236">
+  <component name="PublishConfig" serverName="Apache - HueMate" serverId="35d1437c-11a1-4f8c-86ab-ee6de9a43236" showEqualInSync="true" showExcludedInSync="true">
     <servers>
       <server id="22bb898b-e291-4b56-91a4-13d48ce7828e">
         <serverdata />
@@ -407,6 +441,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Alamgir\tokbox-client\js\views" />
       <recent name="E:\Alamgir\tokbox-client\css\img" />
       <recent name="E:\Alamgir\tokbox-client\js\libs" />
       <recent name="E:\Alamgir\tokbox-client\js" />
@@ -501,13 +536,13 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15129152" sideWeight="0.671193" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.328807" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32827324" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32886723" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328807" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -594,35 +629,80 @@
           <option name="timeStamp" value="74" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/js/views/PublicView.js</url>
+          <line>72</line>
+          <option name="timeStamp" value="78" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
           <url>http://localhost:83/js/views/PublicView.js</url>
-          <line>106</line>
-          <option name="timeStamp" value="75" />
+          <line>99</line>
+          <option name="timeStamp" value="79" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/js/views/PublicView.js</url>
+          <line>95</line>
+          <option name="timeStamp" value="80" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/js/views/PublicView.js</url>
+          <line>104</line>
+          <option name="timeStamp" value="81" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>http://localhost:83/js/controllers/AppRouter.js</url>
+          <line>52</line>
+          <option name="timeStamp" value="82" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>http://localhost:83/js/views/PublicView.js</url>
+          <line>95</line>
+          <option name="timeStamp" value="83" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/js/views/LightEntityView.js</url>
+          <line>44</line>
+          <option name="timeStamp" value="87" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="78" />
+      <option name="time" value="89" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/controllers/AppRouter.js">
+    <entry file="file://$PROJECT_DIR$/header.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="37" selection-start="1518" selection-end="1518" vertical-scroll-proportion="0.4516129">
+        <state line="9" column="6" selection-start="321" selection-end="321" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/testView.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="54" selection-start="460" selection-end="460" vertical-scroll-proportion="0.0">
+        <state line="35" column="29" selection-start="1232" selection-end="1232" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/main_view.less">
+    <entry file="http://localhost:83/js/controllers/AppRouter.js">
+      <provider selected="true" editor-type-id="httpFileEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/web_portal.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="21" selection-start="74" selection-end="74" vertical-scroll-proportion="0.0">
+        <state line="100" column="43" selection-start="1440" selection-end="1440" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="http://localhost:83/js/views/PublicView.js">
+      <provider selected="true" editor-type-id="httpFileEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/bootstrap/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3144" column="21" selection-start="56236" selection-end="56236" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -634,74 +714,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/views/AppView.js">
+    <entry file="file://$PROJECT_DIR$/js/views/LightEntityView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="44" selection-start="431" selection-end="431" vertical-scroll-proportion="0.0">
+        <state line="35" column="64" selection-start="1621" selection-end="1621" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="103" column="55" selection-start="4650" selection-end="4650" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/views/AdminLightEntityView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="46" selection-start="726" selection-end="726" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="http://localhost:83/js/main.js">
-      <provider selected="true" editor-type-id="httpFileEditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="http://localhost:83/js/libs/backbone-min.js">
-      <provider selected="true" editor-type-id="httpFileEditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="http://localhost:8080/users/login">
-      <provider selected="true" editor-type-id="httpFileEditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">
-      <provider selected="true" editor-type-id="httpFileEditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="http://localhost:83/js/views/PublicView.js">
-      <provider selected="true" editor-type-id="httpFileEditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/views/HomeView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="57" selection-start="1064" selection-end="1064" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="http://localhost:83/js/controllers/AppRouter.js">
-      <provider selected="true" editor-type-id="httpFileEditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/views/AdminView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="42" selection-start="380" selection-end="380" vertical-scroll-proportion="0.0">
+        <state line="113" column="71" selection-start="4984" selection-end="4984" vertical-scroll-proportion="-28.115385">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/views/PublicView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="105" column="17" selection-start="3859" selection-end="3859" vertical-scroll-proportion="0.67246836">
+        <state line="75" column="68" selection-start="2596" selection-end="2596" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/views/AdminView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="59" selection-start="756" selection-end="756" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/views/AdminLightEntityView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="33" selection-start="809" selection-end="809" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/views/AdminUserEntityView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="67" column="54" selection-start="2045" selection-end="2045" vertical-scroll-proportion="0.42987806">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/views/HomeView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="33" selection-start="661" selection-end="661" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="83" column="43" selection-start="2581" selection-end="2581" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/controllers/AppRouter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="79" column="61" selection-start="1966" selection-end="1966" vertical-scroll-proportion="0.9661692">
           <folding />
         </state>
       </provider>

@@ -14,95 +14,94 @@ var HomeView = Backbone.View.extend({
     events : {
         "click .file_entity":   "file_entity",
         "click .filecrumb":     "breadcrumb",
-        "change .light_switch": "light_switch"
+        "click #admin_button":  "admin"
     },
 
     initialize: function() {
         _.bindAll(this, 'render', "path", "breadcrumb", "set_breadcrumbs");
 
+        this.entity_views = [];
+
         this.$el.html(App.template.main);
-        //$('#app').html(this.$el);
     },
 
     render: function() {
-        
-        
+
         $('#app').html(this.$el);
 
-        if (App.user.approved || App.user.admin) {
-            //The user is an admin or is approved
-            $('#light_container').empty();
-            var light_data = App.hue_data.lights;
-            for (var i=0; i<light_data.length; i++) {
-                var light_html = App.template.entity(light_data[i]);
-                $('#light_container').append(light_html);
+        var approved_ids = [];
+        if (!App.user.admin) {
+            _.each(App.user.lights, function(light) {
+                if (light.user_approved) {
+                    approved_ids.push(light.id);
+                }
+            }, this);
+        }
+        else {
+            _.each(App.hue_data.lights, function(light) {
+                approved_ids.push(light.id);
+            }, this);
+        }
+
+
+        //is this the first time we're rendering?
+        var first_render = _.isEmpty(this.entity_views);
+
+        if (!first_render) {
+            //adjust views_array to match # of models
+            App.reuse_views(this.entity_views, _.size(approved_ids));
+        }
+
+        //build only the approved views
+        if (!_.isEmpty(approved_ids) || App.user.admin) {
+            var indx = 0;
+            _.each(App.hue_data.lights, function(light) {
+                //only create the view if the user is approved for this light
+                if (_.contains(approved_ids, light.id) || App.user.admin) {
+                    if (first_render) {
+                        var light_view = new LightEntityView({
+                            model : light,
+                            light_container : $('#light_container')
+                        });
+                        this.entity_views.push(light_view);
+                    }
+                    //else assign model to the index of the views array
+                    else {
+                        var view_in_array = this.entity_views[indx];
+                        view_in_array.model = light;
+                        view_in_array.options.light_container = $('#light_container');
+                        indx++;
+                    }
+                }
+            }, this);
+
+            //render everything in the views array
+            _.each(this.entity_views, function(light_view) {
+                light_view.render();
+            }, this);
+
+            //render the admin button only once
+            if (first_render) {
+                if (App.user.admin) {
+                    //the user is an admin, render the admin button
+                    var admin_button_html = $('<button id="admin_button">Admin Panel</button>');
+                    $('#light_container').append(admin_button_html);
+                }
             }
-            
-            if (App.user.admin) {
-                //the user is an admin, render the admin button
-                var admin_button_html = $('<button id="admin_save_button">Save Changes</button>');
-                $('#light_container').append(admin_button_html);
-            }
-            
+
         }
         else {
             //indicate that the user has yet to be approved, render the awaiting approval message
-            
+
         }
-        
+
         this.delegateEvents();
 
         return this;
     },
-    
-    light_switch: function(event) {
-        var light_id = $(event.currentTarget).parent.attr("light_id");
-        var light_name = $(event.currentTarget).parent.attr("light_name");
-        
-        var current_light_state = App.hue_data.lights[light_id-1].state.on;
-        
-        var new_light_state = $(event.currentTarget).val();
-        if (new_light_state != current_light_state) {
-            $.ajax({
-               type: "PUT",
-               url: 'http://localhost:8080/lights/switch',
-               data: JSON.stringify({light_state: new_light_state}),
-               dataType: 'json',
-               statusCode: {
-                   500 : function(jqXHR, textStatus, errorThrown) {
-                       Tokbox.alert({
-                           error: "true",
-                           title: "Unsuccessful Operation",
-                           message: "Couldn't switch the light state"
-                       });
-                       
-                       //Reset the slider
-                       $(event.currentTarget).val(current_light_state);
-                   },
-                   200: function(data) {
-                       App.hue_data.lights[light_id-1].state.on = new_light_state;
-                       
-                       var state_text = "";
-                       if (new_light_state === true) {
-                           state_text = "on";
-                       }
-                       else {
-                           state_text = "off";
-                       }
-                       
-                       
-                       Tokbox.alert({
-                           error: "success",
-                           title: "Successful Operation",
-                           message: light_name + " is now " + state_text + "!"
-                       });
-                       
-                       //update the UI to show the light is on
-                   }
-               }
-            });
-        }
-        
+
+    admin : function() {
+        App.router.navigate('admin', true);
     },
     
     refresh_user: function() {
@@ -210,6 +209,15 @@ var HomeView = Backbone.View.extend({
 
         //use the template to spell out the UL list
         //update the view for the breadcrumbs
+    },
+
+    rerender : function(view_array, num_models) {
+        var size_diff = _.size(view_array) - num_approved_ids;
+
+        //size > 0 means that there more views than necessary
+
+        //size < 0 means that there are fewer views than necessary
+
     }
 
 });

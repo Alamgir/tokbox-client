@@ -8,7 +8,7 @@
 var PublicView = Backbone.View.extend({
 
     events : {
-        "click #login":    "login"
+        "click #login_button":    "login"
     },
 
     initialize: function() {
@@ -88,11 +88,14 @@ var PublicView = Backbone.View.extend({
                         });
                     },
                     200 : function(data) {
-                        App.user = data.user_data;
-                        App.hue_data = data.hue_data;
+                        var user_data = data.user_data;
+                        var hue_data = data.hue_data;
 
-                        $.jstorage.set("user", data.user_data);
-                        $.jstorage.set("hue", data.hue_data);
+                        App.user = user_data;
+                        App.hue_data = hue_data;
+
+                        $.jStorage.set("user", user_data);
+                        $.jStorage.set("hue", hue_data);
                         App.router.navigate("home", true);
                     }
                 },
