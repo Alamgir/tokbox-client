@@ -2,30 +2,47 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b0a706f5-97de-4f10-b2a5-536267d86ab3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/views/LightEntityView.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/views/AdminLightEntityView.js" afterPath="$PROJECT_DIR$/js/views/AdminLightEntityView.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/views/AdminUserEntityView.js" afterPath="$PROJECT_DIR$/js/views/AdminUserEntityView.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/Gotham-Black.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/GothamNarrow-Book.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/views/SidebarView.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/icons.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/toggle_button.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/views/AdminView.js" afterPath="$PROJECT_DIR$/js/views/AdminView.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controllers/AppRouter.js" afterPath="$PROJECT_DIR$/js/controllers/AppRouter.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/views/HomeView.js" afterPath="$PROJECT_DIR$/js/views/HomeView.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/views/LightEntityView.js" afterPath="$PROJECT_DIR$/js/views/LightEntityView.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/views/PublicView.js" afterPath="$PROJECT_DIR$/js/views/PublicView.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/bootstrap/css/bootstrap.css" afterPath="$PROJECT_DIR$/css/bootstrap/css/bootstrap.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main_view.less" afterPath="$PROJECT_DIR$/css/main_view.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/sidebar.less" afterPath="$PROJECT_DIR$/css/sidebar.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/web_portal.less" afterPath="$PROJECT_DIR$/css/web_portal.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tokbox.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="b0a706f5-97de-4f10-b2a5-536267d86ab3" time="1372536380279" ignored="false" />
+    <file path="/Dummy.txt" changelist="b0a706f5-97de-4f10-b2a5-536267d86ab3" time="1377841598862" ignored="false" />
     <file path="/a.js" changelist="b0a706f5-97de-4f10-b2a5-536267d86ab3" time="1371941940991" ignored="false" />
-    <file path="/AdminView.js" changelist="b0a706f5-97de-4f10-b2a5-536267d86ab3" time="1372629181831" ignored="false" />
-    <file path="/index.html" changelist="b0a706f5-97de-4f10-b2a5-536267d86ab3" time="1372138917775" ignored="false" />
-    <file path="/PublicView.js" changelist="b0a706f5-97de-4f10-b2a5-536267d86ab3" time="1372491491449" ignored="false" />
-    <file path="/AppRouter.js" changelist="b0a706f5-97de-4f10-b2a5-536267d86ab3" time="1371978755036" ignored="false" />
-    <file path="/HomeView.js" changelist="b0a706f5-97de-4f10-b2a5-536267d86ab3" time="1372629053516" ignored="false" />
-    <file path="/LightEntityView.js" changelist="b0a706f5-97de-4f10-b2a5-536267d86ab3" time="1372538773692" ignored="false" />
+    <file path="/AdminView.js" changelist="b0a706f5-97de-4f10-b2a5-536267d86ab3" time="1373764252013" ignored="false" />
+    <file path="/index.html" changelist="b0a706f5-97de-4f10-b2a5-536267d86ab3" time="1373857647195" ignored="false" />
+    <file path="/PublicView.js" changelist="b0a706f5-97de-4f10-b2a5-536267d86ab3" time="1376263111656" ignored="false" />
+    <file path="/AppRouter.js" changelist="b0a706f5-97de-4f10-b2a5-536267d86ab3" time="1373764135897" ignored="false" />
+    <file path="/HomeView.js" changelist="b0a706f5-97de-4f10-b2a5-536267d86ab3" time="1373765175847" ignored="false" />
+    <file path="/LightEntityView.js" changelist="b0a706f5-97de-4f10-b2a5-536267d86ab3" time="1373857993822" ignored="false" />
     <file path="/AdminLightEntityView.js" changelist="b0a706f5-97de-4f10-b2a5-536267d86ab3" time="1372631947306" ignored="false" />
-    <file path="/main.js" changelist="b0a706f5-97de-4f10-b2a5-536267d86ab3" time="1372625637229" ignored="false" />
+    <file path="/main.js" changelist="b0a706f5-97de-4f10-b2a5-536267d86ab3" time="1376548345488" ignored="false" />
     <file path="/AdminUserEntityView.js" changelist="b0a706f5-97de-4f10-b2a5-536267d86ab3" time="1372579079254" ignored="false" />
+    <file path="/publicViewTest.html" changelist="b0a706f5-97de-4f10-b2a5-536267d86ab3" time="1373167530196" ignored="false" />
+    <file path="/sidebar.less" changelist="b0a706f5-97de-4f10-b2a5-536267d86ab3" time="1373131773867" ignored="false" />
+    <file path="/main_view.less" changelist="b0a706f5-97de-4f10-b2a5-536267d86ab3" time="1373167213729" ignored="false" />
+    <file path="/icons.css" changelist="b0a706f5-97de-4f10-b2a5-536267d86ab3" time="1373066036148" ignored="false" />
+    <file path="/bootstrap.css" changelist="b0a706f5-97de-4f10-b2a5-536267d86ab3" time="1373090201943" ignored="false" />
+    <file path="/toggle_button.css" changelist="b0a706f5-97de-4f10-b2a5-536267d86ab3" time="1373151784738" ignored="false" />
+    <file path="/web_portal.less" changelist="b0a706f5-97de-4f10-b2a5-536267d86ab3" time="1373228283058" ignored="false" />
+    <file path="/SidebarView.js" changelist="b0a706f5-97de-4f10-b2a5-536267d86ab3" time="1373765404299" ignored="false" />
+    <file path="/raynorTestView.html" changelist="b0a706f5-97de-4f10-b2a5-536267d86ab3" time="1376979810110" ignored="false" />
+    <file path="/filters.less" changelist="b0a706f5-97de-4f10-b2a5-536267d86ab3" time="1376448195759" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +103,7 @@
           <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="113" column="71" selection-start="4984" selection-end="4984" vertical-scroll-proportion="-28.115385">
+                <state line="257" column="26" selection-start="10485" selection-end="10485" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -95,25 +112,16 @@
           <file leaf-file-name="header.html" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/header.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="9" column="6" selection-start="321" selection-end="321" vertical-scroll-proportion="0.0">
+                <state line="7" column="30" selection-start="271" selection-end="271" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="testView.html" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/testView.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="35" column="29" selection-start="1232" selection-end="1232" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="AppRouter.js" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="AppRouter.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/js/controllers/AppRouter.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="79" column="61" selection-start="1966" selection-end="1966" vertical-scroll-proportion="0.9661692">
+                <state line="45" column="33" selection-start="1227" selection-end="1227" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -122,16 +130,7 @@
           <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/js/main.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="83" column="43" selection-start="2581" selection-end="2581" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="HomeView.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js/views/HomeView.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="29" column="33" selection-start="661" selection-end="661" vertical-scroll-proportion="0.0">
+                <state line="54" column="0" selection-start="1668" selection-end="1668" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -140,7 +139,34 @@
           <file leaf-file-name="AdminView.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/js/views/AdminView.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="30" column="59" selection-start="756" selection-end="756" vertical-scroll-proportion="0.0">
+                <state line="38" column="63" selection-start="1093" selection-end="1093" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="SidebarView.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/js/views/SidebarView.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="20" column="8" selection-start="443" selection-end="443" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="AppView.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/js/views/AppView.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="30" column="0" selection-start="628" selection-end="628" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="raynorTestView.html" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/raynorTestView.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="39" column="10" selection-start="1427" selection-end="1427" vertical-scroll-proportion="0.6920668">
                   <folding />
                 </state>
               </provider>
@@ -153,61 +179,16 @@
           <file leaf-file-name="PublicView.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/js/views/PublicView.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="75" column="68" selection-start="2596" selection-end="2596" vertical-scroll-proportion="0.0">
+                <state line="8" column="0" selection-start="200" selection-end="200" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="bootstrap.css" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/css/bootstrap/css/bootstrap.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="3144" column="21" selection-start="56236" selection-end="56236" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="sidebar.less" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/css/sidebar.less">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="21" column="1" selection-start="485" selection-end="485" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="main_view.less" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/css/main_view.less">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="3" column="21" selection-start="74" selection-end="74" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="comment_gutter.less" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/css/comment_gutter.less">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="10" column="43" selection-start="247" selection-end="247" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="AdminLightEntityView.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js/views/AdminLightEntityView.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="29" column="33" selection-start="809" selection-end="809" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="AdminUserEntityView.js" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="AdminUserEntityView.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/js/views/AdminUserEntityView.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="67" column="54" selection-start="2045" selection-end="2045" vertical-scroll-proportion="0.42987806">
+                <state line="64" column="55" selection-start="1943" selection-end="1943" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -216,7 +197,70 @@
           <file leaf-file-name="LightEntityView.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/js/views/LightEntityView.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="35" column="64" selection-start="1621" selection-end="1621" vertical-scroll-proportion="0.0">
+                <state line="6" column="46" selection-start="137" selection-end="137" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="main_view.less" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/css/main_view.less">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="33" column="1" selection-start="508" selection-end="508" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="sidebar.less" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/css/sidebar.less">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="102" column="24" selection-start="2467" selection-end="2467" vertical-scroll-proportion="0.017970402">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="testView.html" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/testView.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="8" column="54" selection-start="460" selection-end="460" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="toggle_button.css" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/css/toggle_button.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="278" column="9" selection-start="6799" selection-end="6799" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="publicViewTest.html" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/publicViewTest.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="10" column="54" selection-start="542" selection-end="542" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="filters.less" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/css/filters.less">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="101" column="33" selection-start="1926" selection-end="1926" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="HomeView.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/js/views/HomeView.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="93" column="20" selection-start="2839" selection-end="2839" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -243,22 +287,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="localhost:83/js/controllers/AppRouter.js" />
-        <option value="localhost:83/js/views/AppView.js" />
-        <option value="localhost:83/js/main.js" />
-        <option value="localhost:83/js/libs/underscore-min.js" />
-        <option value="ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" />
-        <option value="localhost:83/js/views/PublicView.js" />
-        <option value="localhost:83/js/libs/backbone-min.js" />
+        <option value="$PROJECT_DIR$/css/bootstrap/css/bootstrap.css" />
+        <option value="$PROJECT_DIR$/css/toggle_button.css" />
+        <option value="$PROJECT_DIR$/css/sidebar.less" />
+        <option value="$PROJECT_DIR$/css/main_view.less" />
+        <option value="$PROJECT_DIR$/publicViewTest.html" />
+        <option value="$PROJECT_DIR$/css/web_portal.less" />
+        <option value="$PROJECT_DIR$/js/views/AdminView.js" />
+        <option value="$PROJECT_DIR$/js/views/HomeView.js" />
+        <option value="$PROJECT_DIR$/js/views/SidebarView.js" />
         <option value="$PROJECT_DIR$/js/controllers/AppRouter.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/views/LightEntityView.js" />
+        <option value="$PROJECT_DIR$/css/filters.less" />
         <option value="$PROJECT_DIR$/js/views/PublicView.js" />
         <option value="$PROJECT_DIR$/js/main.js" />
-        <option value="$PROJECT_DIR$/js/views/HomeView.js" />
-        <option value="$PROJECT_DIR$/js/views/AdminView.js" />
-        <option value="$PROJECT_DIR$/js/views/AdminUserEntityView.js" />
-        <option value="$PROJECT_DIR$/js/views/AdminLightEntityView.js" />
+        <option value="$PROJECT_DIR$/raynorTestView.html" />
       </list>
     </option>
   </component>
@@ -296,16 +340,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -366,29 +400,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="libs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tokbox" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tokbox-client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -404,6 +416,20 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -441,11 +467,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Alamgir\tokbox-client\css" />
+      <recent name="E:\Alamgir\tokbox-client" />
       <recent name="E:\Alamgir\tokbox-client\js\views" />
       <recent name="E:\Alamgir\tokbox-client\css\img" />
       <recent name="E:\Alamgir\tokbox-client\js\libs" />
-      <recent name="E:\Alamgir\tokbox-client\js" />
-      <recent name="$PROJECT_DIR$/js/libs" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Alamgir\tokbox-client\css" />
@@ -529,13 +555,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1186" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1186" extended-state="7" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32750243" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15129152" sideWeight="0.671193" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18555614" sideWeight="0.671193" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32827324" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -548,7 +574,7 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328807" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -640,12 +666,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js/views/PublicView.js</url>
-          <line>95</line>
+          <line>98</line>
           <option name="timeStamp" value="80" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js/views/PublicView.js</url>
-          <line>104</line>
+          <line>108</line>
           <option name="timeStamp" value="81" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
@@ -673,106 +699,112 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/header.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="6" selection-start="321" selection-end="321" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testView.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="29" selection-start="1232" selection-end="1232" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="http://localhost:83/js/controllers/AppRouter.js">
-      <provider selected="true" editor-type-id="httpFileEditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/web_portal.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="100" column="43" selection-start="1440" selection-end="1440" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="http://localhost:83/js/views/PublicView.js">
-      <provider selected="true" editor-type-id="httpFileEditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/bootstrap/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3144" column="21" selection-start="56236" selection-end="56236" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/sidebar.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="1" selection-start="485" selection-end="485" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/views/LightEntityView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="64" selection-start="1621" selection-end="1621" vertical-scroll-proportion="0.0">
+        <state line="7" column="30" selection-start="271" selection-end="271" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="113" column="71" selection-start="4984" selection-end="4984" vertical-scroll-proportion="-28.115385">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/views/PublicView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="68" selection-start="2596" selection-end="2596" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/views/AdminView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="59" selection-start="756" selection-end="756" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/views/AdminLightEntityView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="33" selection-start="809" selection-end="809" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/views/AdminUserEntityView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="54" selection-start="2045" selection-end="2045" vertical-scroll-proportion="0.42987806">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/views/HomeView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="33" selection-start="661" selection-end="661" vertical-scroll-proportion="0.0">
+        <state line="257" column="26" selection-start="10485" selection-end="10485" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="43" selection-start="2581" selection-end="2581" vertical-scroll-proportion="0.0">
+        <state line="54" column="0" selection-start="1668" selection-end="1668" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/controllers/AppRouter.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="61" selection-start="1966" selection-end="1966" vertical-scroll-proportion="0.9661692">
+        <state line="45" column="33" selection-start="1227" selection-end="1227" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/views/PublicView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="200" selection-end="200" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/views/AdminUserEntityView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="55" selection-start="1943" selection-end="1943" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/views/LightEntityView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="46" selection-start="137" selection-end="137" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/main_view.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="1" selection-start="508" selection-end="508" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testView.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="54" selection-start="460" selection-end="460" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/toggle_button.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="278" column="9" selection-start="6799" selection-end="6799" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/publicViewTest.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="54" selection-start="542" selection-end="542" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/views/SidebarView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="8" selection-start="443" selection-end="443" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/views/HomeView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="93" column="20" selection-start="2839" selection-end="2839" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/raynorTestView.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="10" selection-start="1427" selection-end="1427" vertical-scroll-proportion="0.6920668">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/filters.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="101" column="33" selection-start="1926" selection-end="1926" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/sidebar.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="102" column="24" selection-start="2467" selection-end="2467" vertical-scroll-proportion="0.017970402">
           <folding />
         </state>
       </provider>

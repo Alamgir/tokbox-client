@@ -13,7 +13,7 @@ if (!Tokbox) {
 Tokbox.alert = function(alert_type) {
     $('.alert').remove();
     var alert_html = App.template.alert(alert_type);
-    $('#app').append(alert_html);
+    $('#app_container').append(alert_html);
     $('.alert').hide().fadeIn('slow').delay(2000).fadeOut('slow');
 };
 
@@ -43,6 +43,9 @@ var App = {
         
         var main_view_source = $('#mainView-template').html();
         this.template.main = Handlebars.compile(main_view_source);
+
+        var sidebar_view_source = $('#sidebarView-template').html();
+        this.template.sidebar = Handlebars.compile(sidebar_view_source);
 
         var entity_template_source   = $("#entityView-template").html();
         this.template.entity = Handlebars.compile(entity_template_source);
@@ -94,7 +97,9 @@ var App = {
             }
         }
 
-    }
+    },
+    //Set the server URL as a global variable
+    server_url :  "localhost:8080" //"192.168.1.108:8080"
 };
 
 

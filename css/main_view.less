@@ -5,151 +5,62 @@
     height: 40px;
     width: 40px;
 }
+
+.main_view_border {
+  box-shadow: -2px 0 0 0 #272727, -4px 0 0 0 #3b3b3b;
+}
+
+.light_entity_border {
+  box-shadow: 0px 2px 0 0 #272727, 0px 4px 0 0 #3b3b3b;
+}
+
+@font-face {
+  font-family: GothamHeader;
+  src: url('Gotham-Black.ttf');
+}
+
+@font-face {
+  font-family: GothamBody;
+  src: url('GothamNarrow-Book.ttf');
+}
+
 //
 
-#file_header {
-    width: 800px;
-    color:#b4b6b7;
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 13pt;
-    font-weight: bold;
-    text-align: center;
+#main_view {
+  .main_view_border;
 
-    margin-top: 10px;
-    padding-bottom: 10px;
-    border-bottom: 2px solid #DBDBDB;
+  height: inherit;
+  margin-left: 17%;
 }
 
-.filecrumb_list {
-    list-style: none;
-    overflow: hidden;
-    font: 16px Helvetica, Arial, Sans-Serif;
-    font-weight: bold;
-    color: #646464;
-}
-.filecrumb_list li {
-    float: left;
-    text-decoration: none;
-    padding: 10px 0px 10px 0px;
-    position: relative;
-    display: block;
-    margin-right: 10px;
+.light_entity {
+    .light_entity_border;
+
+    text-align: left;
+    padding: 50px 20px 20px 80px;
+
+    font-family: GothamBody, helvetica, sans-serif;
+    font-size: 24pt;
+    color: #CBCBCB;
+  //font-weight: bold;
 }
 
-.filecrumb_list li:hover {
-    text-decoration: underline;
-    cursor: pointer;
+.light_entity.touched {
+    .light_entity;
+    color: #74B6EE;
+    text-shadow: 0px 0px 6px #94c4eb;
 }
 
-//.filecrumb li:after {
-//    content: " ";
-//    display: block;
-//    width: 0;
-//    height: 0;
-//    border-top: 50px solid transparent;           /* Go big on the size, and let overflow hide */
-//    border-bottom: 50px solid transparent;
-//    border-left: 30px solid hsla(34,85%,35%,1);
-//    position: absolute;
-//    top: 50%;
-//    margin-top: -50px;
-//    left: 100%;
-//    z-index: 2;
-//}
-//
-//.filecrumb li:before {
-//    content: " ";
-//    display: block;
-//    width: 0;
-//    height: 0;
-//    border-top: 50px solid transparent;
-//    border-bottom: 50px solid transparent;
-//    border-left: 30px solid white;
-//    position: absolute;
-//    top: 50%;
-//    margin-top: -50px;
-//    margin-left: 1px;
-//    left: 100%;
-//    z-index: 1;
-//}
-
-.filecrumb_list li:last-child  {
-    color: #0096ff;
-    pointer-events: none;
-    cursor: default;
-}
-
-.filecrumb_arrow {
-    height: 19px;
-    width: 28px;
-
-    //background-image: url('img/filecrumb_arrow.png');
-    //background-repeat: none;
-    background: url('img/filecrumb_arrow.png') no-repeat center;
-}
-
-.file_entity {
-    text-align: center;
-    margin-top: 20px;
-    padding-top: 25px;
-    height: 40px;
-
-    font-family: helvetica, arial, sans-serif;
-    font-size: 12pt;
-    color: #646464;
-    font-weight: bold;
-}
-
-.file_entity:hover {
-    background-color: rgba(0, 150, 255, 0.1);
-}
-
-.entity_selected {
-    background-color: transparent;
-    border: 1px dashed gray;
-    color: #0096FF;
-}
-
-.entity_selected:hover {
-    background-color: transparent;
-}
-
-.file_info {
+.light_info {
     font-weight: normal;
     font-style: italic;
-    color: #aeaeae;
 }
 
 .folder, .folder_app, .folder_gray, .folder_photos, .folder_public, .folder_star, .folder_user {
-    background: url('img/icon-file.png') no-repeat 10%;
+    background: url('img/icon-file.png') no-repeat 5% 50%;
 }
 
 .folder_selected, .folder_app_selected, .folder_gray_selected, .folder_photos_selected, .folder_public_selected,
 .folder_star_selected, .folder_user_selected {
     background: url('img/icon-blue-file.png') no-repeat 10%;
 }
-
-
-
-//ACTION BUTTONS
-
-.action_comment {
-    .file_actions;
-    background: url('img/icon-comment.png') no-repeat center;
-    opacity: 0.5;
-}
-
-.action_comment:hover {
-    opacity: 1.0;
-}
-
-.action_favorite {
-    .file_actions;
-    background: url('img/icon-favorite.png') no-repeat center;
-    opacity: 0.5;
-}
-
-.action_favorite:hover {
-    opacity: 1.0;
-}
-
-//

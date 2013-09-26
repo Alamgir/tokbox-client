@@ -295,6 +295,7 @@ a:hover {
 .row-fluid {
   width: 100%;
   *zoom: 1;
+  height: inherit;
 }
 
 .row-fluid:before,
@@ -321,7 +322,7 @@ a:hover {
 }
 
 .row-fluid [class*="span"]:first-child {
-  margin-left: 0;
+  /*margin-left: 0;*/
 }
 
 .row-fluid .span12 {
@@ -401,8 +402,9 @@ a:hover {
 }
 
 .container-fluid {
-  padding-right: 20px;
-  padding-left: 20px;
+  height: inherit;
+  /*padding-right: 20px;*/
+  /*padding-left: 20px;*/
   *zoom: 1;
 }
 

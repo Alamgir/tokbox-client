@@ -52,7 +52,7 @@ var LightEntityView = Backbone.View.extend({
 
         if (new_light_state != current_light_state) {
             this.model.state.on = new_light_state;
-            var request_url = "http://localhost:8080/users/" + App.user.id + "/set_light_state";
+            var request_url = 'http://' + App.server_url + '/users/' + App.user.id + '/set_light_state';
             $.ajax({
                 type: "POST",
                 url: request_url,

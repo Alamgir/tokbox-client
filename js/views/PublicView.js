@@ -12,14 +12,14 @@ var PublicView = Backbone.View.extend({
     },
 
     initialize: function() {
-        _.bindAll(this, 'render', "login", "admin_data");
+        _.bindAll(this, 'render', "login", "get_status");
 
         this.$el.html(App.template.public);
         //$('#app').html(this.el);
     },
 
     render: function() {
-        $('#app').html($(this.el));
+        $('#app_container').html($(this.el));
         this.delegateEvents();
         return this;
     },
@@ -76,7 +76,7 @@ var PublicView = Backbone.View.extend({
             var login_data = JSON.stringify({username:username,password:password});
             $.ajax({
                 type: 'POST',
-                url: 'http://localhost:8080/users/login',
+                url: 'http://' + App.server_url + '/users/login',
                 data: login_data,
                 dataType: 'json',
                 statusCode: {
@@ -88,6 +88,9 @@ var PublicView = Backbone.View.extend({
                         });
                     },
                     200 : function(data) {
+                        //add back the main view
+                        $('#app_container').html($('<div id="main_view" class="span10"></div>'));
+
                         var user_data = data.user_data;
                         var hue_data = data.hue_data;
 
@@ -96,6 +99,8 @@ var PublicView = Backbone.View.extend({
 
                         $.jStorage.set("user", user_data);
                         $.jStorage.set("hue", hue_data);
+
+                        App.router.views.sidebar.render();
                         App.router.navigate("home", true);
                     }
                 },
@@ -119,10 +124,11 @@ var PublicView = Backbone.View.extend({
 
     },
 
-    admin_data: function() {
+    get_status: function(user_id) {
         $.ajax({
+            async: false,
             type: 'GET',
-            url: 'http://localhost:8080/users/admin_data',
+            url: 'http://' + App.server_url + '/users/' + user_id,
             dataType: 'json',
             statusCode: {
                 400 : function(jqXHR, textStatus, errorThrown) {
@@ -131,11 +137,8 @@ var PublicView = Backbone.View.extend({
                         title:"Bad Login",
                         message:"User isn't admin"
                     });
-                },
-                200 : function(data) {
-                    App.admin_data = data;
-                    $.jstorage.set("admin", data);
                 }
+
             },
             error: function(jqXHR, textStatus, errorThrown) {
                 var error = {
@@ -144,6 +147,21 @@ var PublicView = Backbone.View.extend({
                     message: "Whoops, something went wrong. Don't worry we're on it!"
                 };
                 Tokbox.alert(error);
+                return false;
+            },
+            success: function(data, textStatus, jqXHR) {
+                //add back the main view
+                $('#app_container').html($('<div id="main_view" class="span10"></div>'));
+
+                var user_data = data.user_data;
+                var hue_data = data.hue_data;
+
+                App.user = user_data;
+                App.hue_data = hue_data;
+
+                $.jStorage.set("user", user_data);
+                $.jStorage.set("hue", hue_data);
+                return true;
             }
         });
     }

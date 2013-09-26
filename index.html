@@ -16,7 +16,7 @@
   <meta name="description" content="">
 
   <!-- Mobile viewport optimized: h5bp.com/viewport -->
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
 
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
 
@@ -79,30 +79,33 @@
             <input type="button" id="login_button" value="Log in" />
         </div>
     </script>
+
+  <!--------------------MAIN VIEW TEMPLATE-------------------->
     
     <script id="mainView-template" type="text/x-handlebars-template">
-        <div id="light_container">
-            //light_entity goes in here
+
+            <div id="light_container">
+            </div>
         </div>
+
+    </script>
+
+  <!--------------------SIDEBAR VIEW TEMPLATE-------------------->
+
+  <script id="sidebarView-template" type="text/x-handlebars-template">
+            <div class="row sidebar_nav nav_lights"></div>
     </script>
     
-    <!-- Change entity view templates to be <li> elements for jQuery Mobile -->
-    
+
     <script id="entityView-template" type="text/x-handlebars-template">
-        <div class="row">
-            <div id="{{this.name}}" class="light_entity span9 {{this.type}}" light_name="{{this.name}}" type="{{this.type}}" light_id="{{this.id}}">
-                <div class="span4 light_name">{{this.name}}</div>
-                //<div class="span2 file_info">{{this.icon}}</div>
-                //<div class="span3 file_info" >{{this.modified}}</div>
-                //<div class="action_switch span1"></div>
-                <select name="light_switch" class="light_switch" data-role="slider">
+        <div class="row-fluid">
+            <div id="{{this.name}}" class="light_entity folder">
+                <div class="span8 light_name">{{this.name}}</div>
+                <select name="light_switch" class="light_switch span4" data-role="slider">
                     <option value="false">Off</option>
                     <option value="true">On</option>
                 </select>
             </div>
-            //<div class="action_comment span1"></div>
-            //<div class="action_favorite span1"></div>
-            //<div class="action_delete span1"></div>
         </div>
     </script>
     
@@ -203,8 +206,14 @@
 </head>
 <body>
 
-    <div id="header"></div>
-    <div id="app"></div>
+    <div class="container-fluid">
+        <div id="header" class="row-fluid"></div>
+
+        <div class="row-fluid" id="app_container">
+            <div id="main_view" class="span10"></div>
+        </div>
+    </div>
+
     <div id="footer"></div>
 
 
@@ -234,6 +243,7 @@ chromium.org/developers/how-tos/chrome-frame-getting-started -->
     <script src="/js/main.js"></script>
     <script src="/js/controllers/AppRouter.js"></script>
     <script src="/js/views/AppView.js"></script>
+    <script src="/js/views/SidebarView.js"></script>
     <script src="/js/views/HomeView.js"></script>
     <script src="/js/views/PublicView.js"></script>
     <script src='/js/views/AdminView.js'></script>

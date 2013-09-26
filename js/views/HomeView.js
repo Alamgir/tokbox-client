@@ -27,7 +27,7 @@ var HomeView = Backbone.View.extend({
 
     render: function() {
 
-        $('#app').html(this.$el);
+        $('#main_view').html(this.$el);
 
         var approved_ids = [];
         if (!App.user.admin) {
@@ -80,14 +80,6 @@ var HomeView = Backbone.View.extend({
                 light_view.render();
             }, this);
 
-            //render the admin button only once
-            if (first_render) {
-                if (App.user.admin) {
-                    //the user is an admin, render the admin button
-                    var admin_button_html = $('<button id="admin_button">Admin Panel</button>');
-                    $('#light_container').append(admin_button_html);
-                }
-            }
 
         }
         else {
@@ -96,6 +88,8 @@ var HomeView = Backbone.View.extend({
         }
 
         this.delegateEvents();
+
+        App.router.views.sidebar.manually_set_ui("nav_lights");
 
         return this;
     },
