@@ -2,32 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b0a706f5-97de-4f10-b2a5-536267d86ab3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts/Gotham-Book.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts/Gotham-Book.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts/Gotham-Book.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts/Gotham-Light.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts/Gotham-Light.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts/Gotham-Light.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts/Gotham-Medium.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts/Gotham-Medium.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts/Gotham-Medium.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts/Gotham-Book.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts/Gotham-Light.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts/Gotham-Medium.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/global/colors.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/global/fonts.less" />
-      <change type="DELETED" beforePath="E:\Alamgir\tokbox-client\css\Gotham-Black.ttf" afterPath="" />
-      <change type="DELETED" beforePath="E:\Alamgir\tokbox-client\css\GothamNarrow-Book.ttf" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main_view.less" afterPath="$PROJECT_DIR$/css/main_view.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tokbox.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="b0a706f5-97de-4f10-b2a5-536267d86ab3" time="1394347866995" ignored="false" />
     <file path="/a.js" changelist="b0a706f5-97de-4f10-b2a5-536267d86ab3" time="1371941940991" ignored="false" />
     <file path="/AdminView.js" changelist="b0a706f5-97de-4f10-b2a5-536267d86ab3" time="1373764252013" ignored="false" />
-    <file path="/index.html" changelist="b0a706f5-97de-4f10-b2a5-536267d86ab3" time="1394358004272" ignored="false" />
+    <file path="/index.html" changelist="b0a706f5-97de-4f10-b2a5-536267d86ab3" time="1394359143025" ignored="false" />
     <file path="/PublicView.js" changelist="b0a706f5-97de-4f10-b2a5-536267d86ab3" time="1376263111656" ignored="false" />
     <file path="/AppRouter.js" changelist="b0a706f5-97de-4f10-b2a5-536267d86ab3" time="1373764135897" ignored="false" />
     <file path="/HomeView.js" changelist="b0a706f5-97de-4f10-b2a5-536267d86ab3" time="1373765175847" ignored="false" />
@@ -37,7 +20,7 @@
     <file path="/AdminUserEntityView.js" changelist="b0a706f5-97de-4f10-b2a5-536267d86ab3" time="1372579079254" ignored="false" />
     <file path="/publicViewTest.html" changelist="b0a706f5-97de-4f10-b2a5-536267d86ab3" time="1373167530196" ignored="false" />
     <file path="/sidebar.less" changelist="b0a706f5-97de-4f10-b2a5-536267d86ab3" time="1373131773867" ignored="false" />
-    <file path="/main_view.less" changelist="b0a706f5-97de-4f10-b2a5-536267d86ab3" time="1394357242211" ignored="false" />
+    <file path="/main_view.less" changelist="b0a706f5-97de-4f10-b2a5-536267d86ab3" time="1394359262137" ignored="false" />
     <file path="/icons.css" changelist="b0a706f5-97de-4f10-b2a5-536267d86ab3" time="1373066036148" ignored="false" />
     <file path="/bootstrap.css" changelist="b0a706f5-97de-4f10-b2a5-536267d86ab3" time="1373090201943" ignored="false" />
     <file path="/toggle_button.css" changelist="b0a706f5-97de-4f10-b2a5-536267d86ab3" time="1373151784738" ignored="false" />
@@ -105,10 +88,10 @@
     <splitter split-orientation="horizontal" split-proportion="0.47398826">
       <split-first>
         <leaf>
-          <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="58" column="60" selection-start="2844" selection-end="2844" vertical-scroll-proportion="0.73015875">
+                <state line="54" column="46" selection-start="2711" selection-end="2711" vertical-scroll-proportion="0.65820104">
                   <folding />
                 </state>
               </provider>
@@ -181,10 +164,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="main_view.less" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="main_view.less" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/css/main_view.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="78" column="23" selection-start="2132" selection-end="2132" vertical-scroll-proportion="0.7484144">
+                <state line="69" column="56" selection-start="1965" selection-end="1965" vertical-scroll-proportion="0.62262154">
                   <folding />
                 </state>
               </provider>
@@ -286,8 +269,8 @@
         <option value="$PROJECT_DIR$/raynorTestView.html" />
         <option value="$PROJECT_DIR$/css/global/colors.less" />
         <option value="$PROJECT_DIR$/css/global/fonts.less" />
-        <option value="$PROJECT_DIR$/css/main_view.less" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/css/main_view.less" />
       </list>
     </option>
   </component>
@@ -513,7 +496,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1186" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1186" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32750243" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
@@ -747,16 +730,16 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/main_view.less">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="23" selection-start="2132" selection-end="2132" vertical-scroll-proportion="0.7484144">
+        <state line="54" column="46" selection-start="2711" selection-end="2711" vertical-scroll-proportion="0.65820104">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/css/main_view.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="60" selection-start="2844" selection-end="2844" vertical-scroll-proportion="0.73015875">
+        <state line="69" column="56" selection-start="1965" selection-end="1965" vertical-scroll-proportion="0.62262154">
           <folding />
         </state>
       </provider>
