@@ -1,0 +1,135 @@
+@import "./global/colors.less";
+@import "./global/fonts.less";
+
+
+
+#sign-up-modal {
+
+  .modal-dialog {
+    width: 950px;
+
+
+    .modal-header {
+      border: none;
+
+      .honey-title {
+        font-family: 'HoneySemiBold';
+        font-size: 5em;
+        color: @dark-purple;
+      }
+
+      h5 {
+        font-family: 'GothamBook';
+      }
+
+      button.close {
+        top: 0;
+        right: 30px;
+        position: absolute;
+        padding: 5px 10px;
+        background: @light-purple;
+      }
+
+      .close {
+        font-size: 3em;
+        line-height: 0.8em;
+        color: @dark-purple;
+        margin-top: 0;
+        opacity: 1;
+        text-shadow: none;
+      }
+    } // END MODAL HEADER
+
+    .modal-body {
+      display: table;
+      width: 100%;
+      margin-bottom: 50px;
+
+      .section-sign-up {
+        position: relative;
+        height: 300px;
+        width: 50%;
+        display: table-cell;
+        padding: 20px;
+      }
+
+      #email-sign-up {
+
+        #email-input-container {
+          padding: 0 45px;
+
+          .sign-up-input {
+            width: 100%;
+            text-align: center;
+            border: none;
+            padding: 15px 0;
+            font-size: 1.3em;
+
+            ::-webkit-input-placeholder { color:@light-gray; }
+            ::-moz-placeholder { color:@light-gray; } /* firefox 19+ */
+            :-ms-input-placeholder { color:@light-gray; } /* ie */
+            input:-moz-placeholder { color:@light-gray; }
+
+            &:focus {
+              outline: 2px solid @light-purple;
+              border: none;
+            }
+
+            &:nth-child(1) {
+              border-bottom: 1px solid @light-gray;
+            }
+            &:nth-child(2) {
+              border-bottom: 1px solid @light-gray;
+            }
+          }
+
+
+        }
+
+        .btn {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin-left: 45px;
+          margin-right: 45px;
+
+
+          &.fb-btn {
+            padding: 20px 40px;
+            background-color: @fb-blue;
+            color: #fff;
+            border-radius: 5px;
+
+            &:hover {
+              background-color: lighten(@fb-blue, 10%);
+            }
+            &:active {
+              background-color: darken(@fb-blue, 10%);
+            }
+
+            .btn-text {
+              font-family: 'GothamMedium';
+              font-size: 1.8em;
+              margin-left: 20px;
+            }
+
+          }
+
+
+        }
+
+      }
+
+    } //END MODAL BODY
+
+
+  } //END MODAL DIALOG
+
+
+
+} //END SIGN UP MODAL
+
+
+
+

@@ -5,6 +5,7 @@ html {
   height: 100%;
   body {
     height: 100%;
+    font-family:'GothamBook';
 
     h1 {
       font-family: 'GothamMedium';
@@ -14,6 +15,10 @@ html {
     h2 {
       font-family: 'GothamBook';
       font-size: 2.5em;
+    }
+
+    h3 {
+
     }
 
     h4 {
@@ -29,7 +34,7 @@ html {
   }
 
   #hero {
-    height: 60%;
+    height: 75%;
     background-image: linear-gradient(to bottom, rgba(165, 155, 185, 0.85), rgba(165, 155, 185, 0.85)), url("./img/family-bg.png");
     background-image: -moz-linear-gradient(top, rgba(165, 155, 185, 0.85), rgba(165, 155, 185, 0.85)), url("./img/family-bg.png");
     background-image: -o-linear-gradient(top, rgba(165, 155, 185, 0.85), rgba(165, 155, 185, 0.85)), url("./img/family-bg.png");
@@ -57,6 +62,36 @@ html {
 
         #info-content {
 
+          .info-carousel {
+            position: relative;
+            text-align: center;
+            margin-top: 20px;
+            
+            .info-text {
+              position: absolute;
+              right: 0;
+              left: 0;
+              margin: 0 auto;
+
+              width: 500px;
+
+              &.birthday {
+                background: url('./img/cake.svg') 100px no-repeat;
+                background-size: 40px;
+              }
+              &.invite {
+                background: url('./img/invite.svg') 100px no-repeat;
+                background-size: 40px;
+              }
+              &.baby {
+                background: url('./img/stroller.svg') 70px no-repeat;
+                background-size: 40px;
+              }
+
+
+            }
+          }
+
           .info-text {
             display: table;
             margin: 30px 0 0 0;
@@ -67,10 +102,10 @@ html {
               background: url('./img/polaroid.png') left no-repeat;
             }
             &.devices {
-              background: url('./img/devices.png') left no-repeat;
+              background: url('./img/devices.png') 10px no-repeat;
             }
             &.mail {
-              background: url('./img/mail.png') left no-repeat;
+              background: url('./img/mail.png') 5px no-repeat;
             }
 
 
@@ -87,7 +122,7 @@ html {
           -moz-background-size: contain;
           -o-background-size: contain;
           background-size: contain;
-          height: 865px;
+          height: 800px;
         }
 
       }
@@ -96,27 +131,50 @@ html {
   }
 
   .section {
-    min-height: 40%;
     color: @light-purple;
+    min-height: 300px;
+    text-align: center;
+
+    &.responsive-height {
+      min-height: 20%;
+    }
 
     #get-started {
-      text-align: center;
 
-      .fb-btn {
-        height: 50px;
-        width: 300px;
-        background-color: @fb-blue;
+      .sign-up-btn {
+        margin-top:20px;
+        padding: 20px 40px;
+        background-color: @dark-purple;
         color: #fff;
-        border-radius: 25px;
+        border-radius: 40px;
+
+        &:hover {
+          background-color: lighten(@dark-purple, 10%);
+        }
+        &:active {
+          background-color: darken(@dark-purple, 10%);
+        }
 
         .btn-text {
           font-family: 'GothamMedium';
-          font-size: 1.5em;
+          font-size: 1.8em;
           margin-left: 20px;
         }
-
       }
 
+    }
+
+    #cards-container {
+      width: 80%;
+      margin: 50px auto 0 auto;
+      
+      .card {
+        display: inline-block;
+        height: 270px;
+        width: 180px;
+        border: 1px solid @light-purple;
+        margin: 20px;
+      }
     }
 
   }

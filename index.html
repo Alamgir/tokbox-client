@@ -27,6 +27,7 @@
 <!--<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">-->
 
 <link rel="stylesheet/less" type="text/css" href="/css/main_view.less">
+<link rel="stylesheet/less" type="text/css" href="/css/sign_up_modal.less">
 <link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700' rel='stylesheet' type='text/css'>
 
 
@@ -53,7 +54,12 @@
                     <div class="info-text polaroid"><h5>Attach pictures that recipients can swipe through</h5></div>
                     <div class="info-text devices"><h5>Cards are viewable on any device, mobile or desktop</h5></div>
                     <div class="info-text mail"><h5>Send cards to social networks or email them directly</h5></div>
+                    <div class="info-carousel">
+                        <div class="info-text birthday"><h3>Say Happy Birthday!</h3></div>
+                        <div class="info-text invite"><h3>Send beautiful invites</h3></div>
+                        <div class="info-text baby"><h3>Congratulate on a new baby</h3></div>
 
+                    </div>
                 </div>
 
                 <div id="iphone-container" class="col-md-4">
@@ -63,11 +69,64 @@
             </div>
         </div>
     </div>
+    <div class="section container-fluid responsive-height">
+        <div class="row-fluid">
+            <div class="container-fluid">
+                <div id="get-started" class="col-md-6 col-md-offset-1">
+                    <div class="btn btn-default sign-up-btn" data-toggle="modal" data-target="#sign-up-modal">
+                        <span class="btn-text">Get started on your first card</span>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="sign-up-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <span class="honey-title">Sign Up</span>
+                                    <h5 class="modal-title" id="myModalLabel">Save your cards and get notified about new features</h5>
+                                </div>
+                                <div class="modal-body">
+                                    <div id="email-sign-up" class="section-sign-up">
+                                        <div id="email-input-container">
+                                            <input type="text" class="sign-up-input" placeholder="E-mail Address"/>
+                                            <input type="password" class="sign-up-input" placeholder="Password"/>
+                                            <input type="password" class="sign-up-input" placeholder="Confirm Password"/>
+                                        </div>
+                                        <div class="btn btn-default fb-btn"><i class="fa fa-facebook fa-2x"></i><span class="btn-text">Login with Facebook</span></div>
+                                    </div>
+                                    <div id="fb-sign-up" class="section-sign-up"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h5>or scroll down to see some cards <i class="fa fa-chevron-down"></i></h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="section">
         <div class="row-fluid">
-            <div id="get-started" class="col-md-7">
-                <h2>Get started on your first card</h2>
-                <div class="btn btn-default fb-btn"><i class="fa fa-facebook fa-lg"></i><span class="btn-text">Login with Facebook</span></div>
+            <div class="container-fluid">
+                <div id="cards-container">
+                    <h2>Choose from a variety of occasions</h2>
+                    <div class="card">Card 1</div>
+                    <div class="card">Card 1</div>
+                    <div class="card">Card 1</div>
+                    <div class="card">Card 1</div>
+                    <div class="card">Card 1</div>
+                    <div class="card">Card 1</div>
+                    <div class="card">Card 1</div>
+                    <div class="card">Card 1</div>
+                    <div class="card">Card 1</div>
+                    <div class="card">Card 1</div>
+                    <div class="card">Card 1</div>
+                    <div class="card">Card 1</div>
+                    <div class="card">Card 1</div>
+                    <div class="card">Card 1</div>
+                </div>
             </div>
         </div>
     </div>
