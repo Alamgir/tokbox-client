@@ -4,6 +4,7 @@
 
 
 #sign-up-modal {
+  overflow: inherit; //don't show scrollbar when modal is up
 
   .modal-dialog {
     width: 950px;
@@ -28,6 +29,15 @@
         position: absolute;
         padding: 5px 10px;
         background: @light-purple;
+
+        &:hover {
+          color: darken(@dark-purple, 10%)
+        }
+
+        &:focus {
+          outline: none;
+        }
+
       }
 
       .close {
@@ -45,15 +55,80 @@
       width: 100%;
       margin-bottom: 50px;
 
+      .sign-up-or {
+        font-family: 'Rockwell';
+        width: 20px;
+        font-size: 1.5em;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        top: 45%;
+        background: white;
+      }
+
       .section-sign-up {
         position: relative;
         height: 300px;
         width: 50%;
         display: table-cell;
         padding: 20px;
+
+        .sign-up-container {
+          font-family: 'Rockwell';
+        }
+
+        .btn {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin-left: 45px;
+          margin-right: 45px;
+          padding: 20px 40px;
+          border-radius: 5px;
+          color: #fff;
+
+          .btn-text {
+            font-family: 'GothamMedium';
+            font-size: 1.8em;
+          }
+
+          &.sign-up-btn {
+            background-color: @dark-purple;
+
+            &:hover {
+              background-color: lighten(@dark-purple, 10%);
+            }
+            &:active {
+              background-color: darken(@dark-purple, 10%);
+            }
+          }
+
+          &.fb-btn {
+            background-color: @fb-blue;
+
+            .btn-text {
+              margin-left: 20px;
+            }
+
+            &:hover {
+              background-color: lighten(@fb-blue, 10%);
+            }
+            &:active {
+              background-color: darken(@fb-blue, 10%);
+            }
+
+
+          }
+
+
+        }
+
       }
 
       #email-sign-up {
+        border-right: 1px solid @light-gray;
 
         #email-input-container {
           padding: 0 45px;
@@ -65,61 +140,47 @@
             padding: 15px 0;
             font-size: 1.3em;
 
-            ::-webkit-input-placeholder { color:@light-gray; }
-            ::-moz-placeholder { color:@light-gray; } /* firefox 19+ */
-            :-ms-input-placeholder { color:@light-gray; } /* ie */
-            input:-moz-placeholder { color:@light-gray; }
+            &::-webkit-input-placeholder { color:@light-gray; }
+            &::-moz-placeholder { color:@light-gray; } /* firefox 19+ */
+            &:-ms-input-placeholder { color:@light-gray; } /* ie */
+            &input:-moz-placeholder { color:@light-gray; }
 
             &:focus {
-              outline: 2px solid @light-purple;
+              outline: 3px solid @light-purple;
               border: none;
             }
 
-            &:nth-child(1) {
-              border-bottom: 1px solid @light-gray;
-            }
             &:nth-child(2) {
+              border-top: 1px solid @light-gray;
               border-bottom: 1px solid @light-gray;
             }
           }
 
 
-        }
+        } //END EMAIL INPUT CONTAINER
 
-        .btn {
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          right: 0;
-          margin-left: 45px;
-          margin-right: 45px;
+      } //END EMAIL SIGN UP
 
+      #fb-sign-up {
 
-          &.fb-btn {
-            padding: 20px 40px;
-            background-color: @fb-blue;
-            color: #fff;
-            border-radius: 5px;
+        #fb-container {
+          h5 {
+            font-style: italic;
+          }
+          
+          .fb-text {
+            font-size: 1.2em;
+            line-height: 3em;
 
-            &:hover {
-              background-color: lighten(@fb-blue, 10%);
+            i {
+              font-size: 1.5em;
+              vertical-align: -15%;
+              margin-right: 5px;
             }
-            &:active {
-              background-color: darken(@fb-blue, 10%);
-            }
-
-            .btn-text {
-              font-family: 'GothamMedium';
-              font-size: 1.8em;
-              margin-left: 20px;
-            }
-
           }
 
-
-        }
-
-      }
+        }// END FB CONTAINER
+      }//END FB SIGNUP
 
     } //END MODAL BODY
 
